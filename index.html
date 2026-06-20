@@ -3,38 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carles Albuixech</title>
+<title>CHUK90</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
-    background:#f5f5f5;
-    text-align:center;
-    padding:40px;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-h1{
-    color:#1e3a8a;
+body{
+    background:#ececec;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:40px 20px;
 }
 
 .card{
-    max-width:800px;
+    max-width:900px;
     margin:auto;
     background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 0 20px rgba(0,0,0,0.1);
+    border-radius:30px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.logo{
+    width:350px;
+    max-width:90%;
+    margin-bottom:20px;
+}
+
+h1{
+    color:#1e40af;
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.subtitol{
+    font-size:1.4rem;
+    color:#333;
+    margin-bottom:40px;
+}
+
+.botons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .boto{
-    display:inline-block;
-    margin:10px;
-    padding:15px 30px;
     background:#2563eb;
     color:white;
     text-decoration:none;
-    border-radius:12px;
+    padding:18px 35px;
+    border-radius:15px;
+    font-size:1.2rem;
+    transition:.2s;
 }
+
+.boto:hover{
+    transform:translateY(-3px);
+    background:#1d4ed8;
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    color:#444;
+}
+
+footer a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:2.5rem;
+    }
+
+    .subtitol{
+        font-size:1.1rem;
+    }
+
+    .card{
+        padding:30px 20px;
+    }
+
+    .logo{
+        width:250px;
+    }
+
+    .botons{
+        flex-direction:column;
+    }
+
+}
+
 </style>
 </head>
 
@@ -42,17 +111,38 @@ h1{
 
 <div class="card">
 
-<h1>Carles Albuixech</h1>
+    <img src="logo.png" alt="Logo CHUK90" class="logo">
 
-<p>
-Mestre de Primària · Recursos Educatius · IA · ESDE
-</p>
+    <h1>Carles Albuixech</h1>
 
-<a class="boto" href="#">Portal d'Apps</a>
-<a class="boto" href="#">ESDE</a>
-<a class="boto" href="#">Recursos</a>
+    <p class="subtitol">
+        Mestre de Primària · Recursos Educatius · IA · ESDE
+    </p>
+
+    <div class="botons">
+
+        <a href="/apps/" class="boto">
+            Portal d'Apps
+        </a>
+
+        <a href="/esde/" class="boto">
+            ESDE
+        </a>
+
+        <a href="/recursos/" class="boto">
+            Recursos
+        </a>
+
+    </div>
 
 </div>
+
+<footer>
+    <p>
+        © 2026 Carles Albuixech ·
+        <a href="https://chuk90.com">chuk90.com</a>
+    </p>
+</footer>
 
 </body>
 </html>
