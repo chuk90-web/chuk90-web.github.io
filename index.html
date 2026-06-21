@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHUK90 · Apps educatives, joc i IA</title>
+  <meta name="description" content="CHUK90: recursos, aplicacions educatives, joc i IA per a l'aula." />
+
+  <style>
+    :root{
+      --fons:#071514;
+      --paper:#ead7aa;
+      --tinta:#14120e;
+      --roig:#b9432b;
+      --petroli:#0f6c72;
+      --ocre:#c88a23;
+      --crema:#f3dfae;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      min-height:100vh;
+      background:
+        radial-gradient(circle at top, rgba(234,215,170,.16), transparent 35%),
+        linear-gradient(180deg, #09201f 0%, #050807 100%);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--crema);
+      padding:18px;
+    }
+
+    main{
+      width:min(1200px, 100%);
+      margin:0 auto;
+    }
+
+    .hero{
+      position:relative;
+      width:100%;
+      border:4px solid #0c0c09;
+      border-radius:18px;
+      overflow:hidden;
+      background:#111;
+      box-shadow:
+        0 20px 60px rgba(0,0,0,.45),
+        0 0 0 4px rgba(234,215,170,.18);
+    }
+
+    .hero img{
+      width:100%;
+      display:block;
+      height:auto;
+    }
+
+    /*
+      Botons clicables invisibles damunt dels botons dibuixats del banner.
+      Funcionen sobre la imatge completa.
+    */
+    .hotspot{
+      position:absolute;
+      bottom:10.8%;
+      height:11.5%;
+      border-radius:18px;
+      text-indent:-9999px;
+      overflow:hidden;
+      outline:none;
+    }
+
+    .hotspot:focus-visible{
+      outline:4px solid #fff;
+      outline-offset:-4px;
+      background:rgba(255,255,255,.12);
+    }
+
+    .hotspot:hover{
+      background:rgba(255,255,255,.08);
+    }
+
+    .hotspot-apps{
+      left:6.3%;
+      width:28.4%;
+    }
+
+    .hotspot-esde{
+      left:36.1%;
+      width:27.1%;
+    }
+
+    .hotspot-recursos{
+      left:64.2%;
+      width:29.3%;
+    }
+
+    .mobile-menu{
+      display:none;
+      gap:14px;
+      margin-top:18px;
+    }
+
+    .mobile-menu a{
+      display:block;
+      text-align:center;
+      text-decoration:none;
+      color:#f7e7bf;
+      font-weight:900;
+      letter-spacing:.04em;
+      padding:18px 20px;
+      border:4px solid #0d0d0a;
+      border-radius:18px;
+      box-shadow:5px 5px 0 #0d0d0a;
+    }
+
+    .mobile-menu a:nth-child(1){ background:var(--roig); }
+    .mobile-menu a:nth-child(2){ background:var(--petroli); }
+    .mobile-menu a:nth-child(3){ background:var(--ocre); color:#17120a; }
+
+    footer{
+      text-align:center;
+      margin:18px auto 0;
+      font-weight:800;
+      letter-spacing:.05em;
+      color:#f1d9a7;
+      opacity:.9;
+      font-size:.95rem;
+    }
+
+    @media (max-width:700px){
+      body{
+        padding:10px;
+      }
+
+      .hero{
+        border-radius:12px;
+        border-width:3px;
+      }
+
+      /*
+        En mòbil és millor usar botons reals baix,
+        perquè els hotspots sobre la imatge poden quedar massa menuts.
+      */
+      .hotspot{
+        display:none;
+      }
+
+      .mobile-menu{
+        display:grid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="hero" aria-label="Portada CHUK90">
+      <img src="assets/banner-chuk90.png" alt="CHUK90. Apps educatives, joc i IA per a l'aula." />
+
+      <a class="hotspot hotspot-apps" href="/apps/" aria-label="Entrar al Portal d'Apps">Portal d'Apps</a>
+      <a class="hotspot hotspot-esde" href="/esde/" aria-label="Entrar a ESDE">ESDE</a>
+      <a class="hotspot hotspot-recursos" href="/recursos/" aria-label="Entrar a Recursos">Recursos</a>
+    </section>
+
+    <nav class="mobile-menu" aria-label="Menú principal">
+      <a href="/apps/">PORTAL D'APPS →</a>
+      <a href="/esde/">ESDE →</a>
+      <a href="/recursos/">RECURSOS →</a>
+    </nav>
+  </main>
+
+  <footer>
+    © 2026 CHUK90 · Educació · Joc · IA · Creativitat
+  </footer>
+</body>
+</html>
