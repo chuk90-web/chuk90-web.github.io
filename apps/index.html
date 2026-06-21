@@ -3,26 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal d'Apps</title>
+  <title>Portal d'Apps · CHUK90</title>
   <style>
-    body {
-      min-height:100vh;
-      display:grid;
-      place-items:center;
-      background:#071514;
-      color:#ead7aa;
-      font-family:system-ui, sans-serif;
-      text-align:center;
-      padding:30px;
-    }
-    a { color:#ead7aa; font-weight:800; }
+
+:root{
+  --fons:#071514;
+  --paper:#ead7aa;
+  --tinta:#15120e;
+  --crema:#f0d7a0;
+  --roig:#b9432b;
+  --petroli:#0f626d;
+  --ocre:#c78f24;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at top, rgba(234,215,170,.12), transparent 38%),
+    linear-gradient(180deg, #0b211f 0%, #050807 100%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color:var(--crema);
+  padding:18px;
+}
+main{ width:min(1200px, 100%); margin:0 auto; }
+.banner{
+  width:100%;
+  display:block;
+  border-radius:26px;
+  border:4px solid #111;
+  box-shadow:0 18px 50px rgba(0,0,0,.45);
+}
+.panel{
+  margin-top:22px;
+  background:var(--paper);
+  color:var(--tinta);
+  border:4px solid #111;
+  border-radius:24px;
+  padding:28px;
+  box-shadow:8px 8px 0 #111;
+}
+.panel h1{
+  font-size:clamp(2rem, 5vw, 4rem);
+  letter-spacing:.02em;
+  line-height:1;
+  margin-bottom:12px;
+  text-transform:uppercase;
+}
+.panel p{
+  font-size:1.1rem;
+  font-weight:700;
+  max-width:850px;
+}
+.grid{
+  margin-top:24px;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+}
+.card{
+  background:#f5dfaa;
+  border:3px solid #111;
+  border-radius:20px;
+  padding:22px;
+  min-height:150px;
+  box-shadow:5px 5px 0 #111;
+}
+.card h2{
+  margin-bottom:10px;
+  font-size:1.4rem;
+  text-transform:uppercase;
+}
+.card p{
+  font-size:1rem;
+  font-weight:650;
+}
+.boto{
+  display:inline-block;
+  margin-top:18px;
+  text-decoration:none;
+  color:#f7e7bf;
+  background:var(--petroli);
+  border:3px solid #111;
+  border-radius:999px;
+  padding:12px 22px;
+  font-weight:900;
+  box-shadow:4px 4px 0 #111;
+}
+.boto:hover{ transform:translateY(-2px); }
+.footer{
+  text-align:center;
+  margin:28px 0 6px;
+  font-weight:800;
+  opacity:.9;
+}
+.footer a{ color:var(--crema); }
+@media(max-width:800px){
+  body{ padding:10px; }
+  .banner{ border-radius:16px; }
+  .panel{ padding:20px; border-radius:18px; box-shadow:5px 5px 0 #111; }
+  .grid{ grid-template-columns:1fr; }
+}
+
+    .panel h1{ color:#b9432b; }
+    .boto{ background:#b9432b; }
   </style>
 </head>
 <body>
   <main>
-    <h1>Portal d'Apps</h1>
-    <p>Pàgina en construcció.</p>
-    <p><a href="/">← Tornar a CHUK90</a></p>
+    <img class="banner" src="../assets/banner-apps.jpeg" alt="Portal d'Apps">
+    <section class="panel">
+      <h1>Portal d'Apps</h1>
+      <p>Aplicacions educatives i jocs interactius per a l'aula.</p>
+      <div class="grid">
+      <article class="card">
+        <h2>Pasaparaula</h2>
+        <p>Jocs de preguntes per treballar vocabulari, cultura general i continguts de classe.</p>
+      </article>
+      <article class="card">
+        <h2>Trivials</h2>
+        <p>Reptes interactius per repassar continguts de manera ràpida, visual i divertida.</p>
+      </article>
+      <article class="card">
+        <h2>Escape rooms</h2>
+        <p>Aventures digitals per resoldre enigmes i aprendre jugant.</p>
+      </article>
+      </div>
+      <a class="boto" href="/">← Tornar a CHUK90</a>
+    </section>
+    <p class="footer">© 2026 CHUK90 · Educació · Joc · IA · Creativitat</p>
   </main>
 </body>
 </html>
