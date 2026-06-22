@@ -1,3 +1,9 @@
-CHUK90 Portal V3.2
+CHUK90 Portal V3.3A
 
-Inclou home tipus plataforma, dades JSON en js/catalog.js, seccions per subcategories, filtres, targetes amb hover, fitxa canònica item.html, favorits locals i estructura preparada per captures/descàrregues.
+Canvis principals:
+- Home redissenyada amb tres banners panoràmics baixos: Portal d'Apps, ESDE i Recursos.
+- Banners nous integrats en assets/banners/.
+- Targetes verticals més menudes dins de les seccions.
+- Eliminat l'efecte de text visible baix de les targetes: la informació apareix només en hover.
+- Tipografia més compacta i amb títols més potents.
+- CSS afegit al final de css/style.css com a bloc "V3.3A — poliment visual".
