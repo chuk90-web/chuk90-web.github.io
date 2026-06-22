@@ -1,136 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ca">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recursos · CHUK90</title>
-  <style>
-
-:root{
-  --fons:#071514;
-  --paper:#ead7aa;
-  --tinta:#15120e;
-  --crema:#f0d7a0;
-  --roig:#b9432b;
-  --petroli:#0f626d;
-  --ocre:#c78f24;
-}
-*{ box-sizing:border-box; margin:0; padding:0; }
-body{
-  min-height:100vh;
-  background:
-    radial-gradient(circle at top, rgba(234,215,170,.12), transparent 38%),
-    linear-gradient(180deg, #0b211f 0%, #050807 100%);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color:var(--crema);
-  padding:18px;
-}
-main{ width:min(1200px, 100%); margin:0 auto; }
-.banner{
-  width:100%;
-  display:block;
-  border-radius:26px;
-  border:4px solid #111;
-  box-shadow:0 18px 50px rgba(0,0,0,.45);
-}
-.panel{
-  margin-top:22px;
-  background:var(--paper);
-  color:var(--tinta);
-  border:4px solid #111;
-  border-radius:24px;
-  padding:28px;
-  box-shadow:8px 8px 0 #111;
-}
-.panel h1{
-  font-size:clamp(2rem, 5vw, 4rem);
-  letter-spacing:.02em;
-  line-height:1;
-  margin-bottom:12px;
-  text-transform:uppercase;
-}
-.panel p{
-  font-size:1.1rem;
-  font-weight:700;
-  max-width:850px;
-}
-.grid{
-  margin-top:24px;
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:18px;
-}
-.card{
-  background:#f5dfaa;
-  border:3px solid #111;
-  border-radius:20px;
-  padding:22px;
-  min-height:150px;
-  box-shadow:5px 5px 0 #111;
-}
-.card h2{
-  margin-bottom:10px;
-  font-size:1.4rem;
-  text-transform:uppercase;
-}
-.card p{
-  font-size:1rem;
-  font-weight:650;
-}
-.boto{
-  display:inline-block;
-  margin-top:18px;
-  text-decoration:none;
-  color:#f7e7bf;
-  background:var(--petroli);
-  border:3px solid #111;
-  border-radius:999px;
-  padding:12px 22px;
-  font-weight:900;
-  box-shadow:4px 4px 0 #111;
-}
-.boto:hover{ transform:translateY(-2px); }
-.footer{
-  text-align:center;
-  margin:28px 0 6px;
-  font-weight:800;
-  opacity:.9;
-}
-.footer a{ color:var(--crema); }
-@media(max-width:800px){
-  body{ padding:10px; }
-  .banner{ border-radius:16px; }
-  .panel{ padding:20px; border-radius:18px; box-shadow:5px 5px 0 #111; }
-  .grid{ grid-template-columns:1fr; }
-}
-
-    .panel h1{ color:#a86f14; }
-    .boto{ background:#a86f14; }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recursos · CHUK90</title>
+<link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-  <main>
-    <img class="banner" src="../assets/banner-recursos.jpeg" alt="Recursos">
-    <section class="panel">
-      <h1>Recursos</h1>
-      <p>Materials, guies i eines útils per al dia a dia de l'aula.</p>
-      <div class="grid">
-      <article class="card">
-        <h2>Materials</h2>
-        <p>Fitxes, dossiers i recursos preparats per portar directament a l'aula.</p>
-      </article>
-      <article class="card">
-        <h2>Guies</h2>
-        <p>Documents d'ajuda, instruccions i propostes per organitzar activitats.</p>
-      </article>
-      <article class="card">
-        <h2>Eines</h2>
-        <p>Suports digitals, imprimibles i idees pràctiques per al dia a dia.</p>
-      </article>
-      </div>
-      <a class="boto" href="/">← Tornar a CHUK90</a>
-    </section>
-    <p class="footer">© 2026 CHUK90 · Educació · Joc · IA · Creativitat</p>
-  </main>
-</body>
-</html>
+<body><main class="page">
+<img class="hero" src="../assets/banners/banner-recursos.jpg" alt="Recursos">
+<a class="back" href="../index.html">← Tornar</a>
+<section class="panel intro"><h1>Recursos</h1><p>Materials, guies i eines útils per al dia a dia de l’aula.</p></section>
+<section class="grid"><a class="card gold" href="pdf.html">
+  
+  <div class="card-body"><h2>PDF</h2><p>Obrir secció o app.</p></div>
+</a>
+<a class="card gold" href="infografies.html">
+  
+  <div class="card-body"><h2>Infografies</h2><p>Obrir secció o app.</p></div>
+</a>
+<a class="card gold" href="histories-socials.html">
+  
+  <div class="card-body"><h2>Històries Socials</h2><p>Obrir secció o app.</p></div>
+</a>
+<a class="card gold" href="fitxes.html">
+  
+  <div class="card-body"><h2>Fitxes</h2><p>Obrir secció o app.</p></div>
+</a>
+<a class="card gold" href="guies.html">
+  
+  <div class="card-body"><h2>Guies</h2><p>Obrir secció o app.</p></div>
+</a>
+<a class="card gold" href="unitats-adaptades.html">
+  
+  <div class="card-body"><h2>Unitats Adaptades</h2><p>Obrir secció o app.</p></div>
+</a></section>
+<footer class="footer">© 2025 CHUK90 · EDUCACIÓ · JOC · IA · CREATIVITAT</footer>
+<script src="../js/main.js"></script>
+</main></body></html>
