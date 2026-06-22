@@ -1,9 +1,3 @@
-CHUK90 Portal V2
+CHUK90 Portal V3.2
 
-Estructura reorganitzada per carpetes:
-- /apps/index.html i pàgines de Portal d’Apps
-- /esde/index.html i pàgines ESDE
-- /recursos/index.html i pàgines de Recursos
-- /assets, /css i /js compartits
-
-Preparat per GitHub Pages.
+Inclou home tipus plataforma, dades JSON en js/catalog.js, seccions per subcategories, filtres, targetes amb hover, fitxa canònica item.html, favorits locals i estructura preparada per captures/descàrregues.
