@@ -119,3 +119,56 @@ body{font-family:var(--font-body);}
   .overlay{transform:translateY(100%);} /* en mòbil la targeta obri la fitxa; sense text blau visible */
   .cover-card:active .overlay{transform:translateY(0);}
 }
+
+/* ==============================
+   CHUK90 Portal V3.3A-revisió
+   Ajustos demanats:
+   1) Banners de Home amb la mateixa amplada visual que la capçalera.
+   2) Mateix disseny de cards de /apps també aplicat a /esde i /recursos.
+   ============================== */
+
+/* Home: les tres franges ocupen exactament el mateix ample que el banner de capçalera */
+.hero,
+.home-banners{
+  width:100%;
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.home-banner-card{
+  width:100%;
+  max-width:100%;
+}
+.home-banner-card img{
+  width:100%;
+  max-width:100%;
+}
+
+/* Seccions internes: Apps, ESDE i Recursos comparteixen el mateix patró de 2 cards */
+body[data-section="apps"] .covers,
+body[data-section="esde"] .covers,
+body[data-section="recursos"] .covers{
+  grid-template-columns:repeat(2, minmax(220px, 1fr));
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
+  gap:18px;
+}
+
+body[data-section="apps"] .cover-card,
+body[data-section="esde"] .cover-card,
+body[data-section="recursos"] .cover-card{
+  max-width:360px;
+  width:100%;
+  justify-self:center;
+}
+
+@media(max-width:560px){
+  body[data-section="apps"] .covers,
+  body[data-section="esde"] .covers,
+  body[data-section="recursos"] .covers{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    max-width:100%;
+    gap:12px;
+  }
+}
