@@ -1,166 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ca">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portal d'Apps · CHUK90</title>
-
-  <style>
-    :root{
-      --fons:#120706;
-      --paper:#ead7aa;
-      --tinta:#15120e;
-      --roig:#b9432b;
-      --crema:#f0d7a0;
-    }
-
-    *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
-    }
-
-    body{
-      min-height:100vh;
-      background:
-        radial-gradient(circle at top, rgba(185,67,43,.20), transparent 38%),
-        linear-gradient(180deg, #210b08 0%, #070403 100%);
-      font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color:var(--crema);
-      padding:18px;
-    }
-
-    main{
-      width:min(1200px, 100%);
-      margin:0 auto;
-    }
-
-    .banner img{
-      width:100%;
-      display:block;
-      border-radius:24px;
-      border:4px solid #111;
-      box-shadow:0 18px 50px rgba(0,0,0,.45);
-    }
-
-    .menu-apps{
-      width:100%;
-      margin:18px auto 0;
-      display:flex;
-      flex-direction:column;
-      align-items:flex-start;
-      gap:10px;
-      padding-left:42px;
-    }
-
-    .menu-apps img{
-      width:220px;
-      height:40px;
-      display:block;
-      transition:.15s;
-    }
-
-    .menu-apps a:hover img{
-      transform:translateX(6px);
-    }
-
-    .intro{
-      margin-top:22px;
-      background:var(--paper);
-      color:var(--tinta);
-      border:4px solid #111;
-      border-radius:24px;
-      padding:28px;
-      box-shadow:8px 8px 0 #111;
-    }
-
-    .intro h1{
-      color:#8d2b21;
-      font-size:clamp(2rem, 5vw, 4rem);
-      text-transform:uppercase;
-      line-height:1;
-      margin-bottom:10px;
-    }
-
-    .intro p{
-      font-size:1.1rem;
-      font-weight:750;
-      max-width:850px;
-    }
-
-    .tornar{
-      display:inline-block;
-      margin-top:20px;
-      text-decoration:none;
-      color:#fff1c8;
-      background:var(--roig);
-      border:3px solid #111;
-      border-radius:999px;
-      padding:12px 22px;
-      font-weight:900;
-      box-shadow:4px 4px 0 #111;
-    }
-
-    footer{
-      text-align:center;
-      margin:28px 0 6px;
-      font-weight:850;
-      opacity:.9;
-    }
-
-    @media(max-width:700px){
-      body{
-        padding:10px;
-      }
-
-      .banner img{
-        border-radius:16px;
-        border-width:3px;
-      }
-
-      .menu-apps{
-        padding-left:0;
-        align-items:center;
-      }
-
-      .intro{
-        padding:20px;
-        border-radius:18px;
-        box-shadow:5px 5px 0 #111;
-      }
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal d&#x27;Apps · CHUK90</title>
+<link rel="stylesheet" href="../css/style.css">
 </head>
-
-<body>
-  <main>
-
-    <section class="banner">
-      <img src="../assets/banner-apps.png" alt="Portal d'Apps CHUK90" />
-    </section>
-
-    <nav class="menu-apps" aria-label="Menú d'apps">
-      <a href="pasaparaula/">
-        <img src="../assets/botons/btn-pasaparaula.png" alt="Pasaparaula" />
-      </a>
-
-      <a href="trivials/">
-        <img src="../assets/botons/btn-trivial.png" alt="Trivial" />
-      </a>
-
-      <a href="escape-rooms/">
-        <img src="../assets/botons/btn-escape-room.png" alt="Escape Room" />
-      </a>
-    </nav>
-
-    <section class="intro">
-      <h1>Portal d'Apps</h1>
-      <p>Aplicacions educatives i jocs interactius per a l'aula: pasaparaules, trivials, escape rooms i ferramentes per aprendre jugant.</p>
-      <a class="tornar" href="/">← Tornar a CHUK90</a>
-    </section>
-
-    <footer>© 2026 CHUK90 · Portal d'Apps · Educació · Joc · IA</footer>
-
-  </main>
-</body>
-</html>
+<body><main class="page">
+<img class="hero" src="../assets/banners/banner-portal-apps.jpg" alt="Portal d&#x27;Apps">
+<a class="back" href="../index.html">← Tornar</a>
+<section class="panel intro"><h1>Portal d'Apps</h1><p>Tria una família d’aplicacions educatives.</p></section>
+<section class="grid"><a class="card red" href="pasapalabra/index.html">
+  <img class="card-img" src="../assets/banners/banner-pasapalabra.jpg" alt="Pasapalabra">
+  <div class="card-body"><h2>Pasapalabra</h2><p>Juga amb les lletres.</p></div>
+</a>
+<a class="card teal" href="trivials/index.html">
+  <img class="card-img" src="../assets/banners/banner-trivial.jpg" alt="Trivials">
+  <div class="card-body"><h2>Trivials</h2><p>Preguntes i respostes per equips.</p></div>
+</a>
+<a class="card brown" href="escape-rooms/index.html">
+  <img class="card-img" src="../assets/banners/banner-escape-room.jpg" alt="Escape Rooms">
+  <div class="card-body"><h2>Escape Rooms</h2><p>Misteris i reptes encadenats.</p></div>
+</a>
+<a class="card gold" href="millonari/index.html">
+  
+  <div class="card-body"><h2>Gran Millonari</h2><p>Concurs televisiu per a classe.</p></div>
+</a>
+<a class="card blue" href="generadors/index.html">
+  
+  <div class="card-body"><h2>Generadors</h2><p>Eines per crear continguts ràpidament.</p></div>
+</a>
+<a class="card purple" href="altres-apps/index.html">
+  
+  <div class="card-body"><h2>Altres Apps</h2><p>Projectes experimentals i utilitats.</p></div>
+</a></section>
+<footer class="footer">© 2025 CHUK90 · EDUCACIÓ · JOC · IA · CREATIVITAT</footer>
+<script src="../js/main.js"></script>
+</main></body></html>
