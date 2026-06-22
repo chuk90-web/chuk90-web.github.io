@@ -1,1 +1,1 @@
-// Portal CHUK90 - JS reservat per a filtres i cercador.
+console.log('CHUK90 portal carregat');
