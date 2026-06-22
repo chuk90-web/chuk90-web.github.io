@@ -120,41 +120,48 @@ body{font-family:var(--font-body);}
   .cover-card:active .overlay{transform:translateY(0);}
 }
 
+
 /* ==============================
-   CHUK90 Portal V3.3A-revisió
-   Ajustos demanats:
-   1) Banners de Home amb la mateixa amplada visual que la capçalera.
-   2) Mateix disseny de cards de /apps també aplicat a /esde i /recursos.
+   AJUST V3.3A — feedback Carles
+   1) Home: banners redimensionats, NO retallats.
+   2) Apps, ESDE i Recursos: mateix patró visual de cards.
    ============================== */
 
-/* Home: les tres franges ocupen exactament el mateix ample que el banner de capçalera */
-.hero,
+/* HOME: els banners ocupen la mateixa amplada que la capçalera però es mostren sencers */
 .home-banners{
   width:100%;
   max-width:100%;
-  margin-left:auto;
-  margin-right:auto;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
 }
 .home-banner-card{
   width:100%;
   max-width:100%;
+  border-radius:8px;
+  overflow:hidden;
+  background:transparent;
 }
 .home-banner-card img{
   width:100%;
-  max-width:100%;
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  display:block;
 }
 
-/* Seccions internes: Apps, ESDE i Recursos comparteixen el mateix patró de 2 cards */
+/* SECCIONS INTERNES: ESDE i Recursos igual que Apps */
 body[data-section="apps"] .covers,
 body[data-section="esde"] .covers,
 body[data-section="recursos"] .covers{
-  grid-template-columns:repeat(2, minmax(220px, 1fr));
+  grid-template-columns:repeat(2, minmax(220px, 1fr)) !important;
   max-width:760px;
   margin-left:auto;
   margin-right:auto;
   gap:18px;
 }
-
 body[data-section="apps"] .cover-card,
 body[data-section="esde"] .cover-card,
 body[data-section="recursos"] .cover-card{
@@ -167,8 +174,96 @@ body[data-section="recursos"] .cover-card{
   body[data-section="apps"] .covers,
   body[data-section="esde"] .covers,
   body[data-section="recursos"] .covers{
-    grid-template-columns:repeat(2, minmax(0, 1fr));
+    grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
     max-width:100%;
     gap:12px;
+  }
+}
+
+/* ==============================
+   CHUK90 Portal V3.3B
+   Feedback aplicat:
+   - Home: banners a l'amplada de la capçalera, redimensionats sencers, sense retallar.
+   - Apps, ESDE i Recursos: mateix sistema visual de cards.
+   - Graelles internes: 2 cards per fila en desktop, centrades si sobra una.
+   ============================== */
+
+/* HOME: banners sencers, no retallats */
+.home-banners{
+  width:100%;
+  max-width:100%;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin:22px 0 30px;
+}
+.home-banner-card{
+  width:100%;
+  max-width:100%;
+  display:block;
+  overflow:hidden;
+  border-radius:8px;
+  border:2px solid rgba(211,155,54,.72);
+  box-shadow:0 14px 34px rgba(0,0,0,.32);
+  background:#07121b;
+}
+.home-banner-card img{
+  width:100%;
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  display:block;
+}
+
+/* SECCIONS: Apps, ESDE i Recursos exactament igual */
+body[data-section="apps"] .covers,
+body[data-section="esde"] .covers,
+body[data-section="recursos"] .covers{
+  display:flex !important;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:18px;
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
+}
+body[data-section="apps"] .cover-card,
+body[data-section="esde"] .cover-card,
+body[data-section="recursos"] .cover-card{
+  flex:0 1 calc(50% - 9px);
+  max-width:360px;
+  min-width:220px;
+  width:100%;
+}
+
+/* Evita qualsevol text sota les portades: tota la info va al hover */
+.cover-card{
+  color:#fff;
+  text-decoration:none;
+}
+.cover-card:visited,
+.cover-card:active,
+.cover-card:hover{
+  color:#fff;
+  text-decoration:none;
+}
+
+@media(max-width:560px){
+  body[data-section="apps"] .covers,
+  body[data-section="esde"] .covers,
+  body[data-section="recursos"] .covers{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    max-width:100%;
+    gap:12px;
+  }
+  body[data-section="apps"] .cover-card,
+  body[data-section="esde"] .cover-card,
+  body[data-section="recursos"] .cover-card{
+    min-width:0;
+    max-width:none;
+    width:100%;
   }
 }
