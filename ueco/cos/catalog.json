@@ -1,6 +1,6 @@
 {
   "project": "COSMOS - El cos humà UECO",
-  "version": "v16",
+  "version": "v17",
   "catalog_total": 120,
   "anatomical_categories": {
     "ossos": [
@@ -1657,9 +1657,24 @@
           "initial": "Quan alcem les celles, este múscul treballa.",
           "medium": "Múscul de l’expressió facial que eleva les celles.",
           "advanced": "El ventre frontal de l’occipitofrontal participa en l’elevació de les celles i la formació de plecs al front."
+        },
+        "es": {
+          "initial": "Este músculo trabaja cuando levantamos las cejas.",
+          "medium": "Es un músculo de la expresión facial que eleva las cejas.",
+          "advanced": "El vientre frontal del occipitofrontal eleva las cejas y forma pliegues en la frente."
+        },
+        "en": {
+          "initial": "This muscle works when we raise our eyebrows.",
+          "medium": "It is a facial expression muscle that raises the eyebrows.",
+          "advanced": "The frontal belly of the occipitofrontalis raises the eyebrows and forms forehead wrinkles."
+        },
+        "fr": {
+          "initial": "Ce muscle travaille quand nous levons les sourcils.",
+          "medium": "C’est un muscle de l’expression du visage qui élève les sourcils.",
+          "advanced": "Le ventre frontal de l’occipito-frontal élève les sourcils et forme des plis sur le front."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_orbicular_ulls",
@@ -1702,9 +1717,24 @@
           "initial": "Ens ajuda a tancar els ulls.",
           "medium": "Múscul circular que tanca les parpelles i intervé en el parpelleig.",
           "advanced": "Les porcions palpebral i orbitària permeten el tancament suau i fort de les parpelles."
+        },
+        "es": {
+          "initial": "Nos ayuda a cerrar los ojos.",
+          "medium": "Este músculo circular cierra los párpados y participa en el parpadeo.",
+          "advanced": "Sus porciones palpebral y orbitaria permiten cerrar los párpados suavemente o con fuerza."
+        },
+        "en": {
+          "initial": "It helps us close our eyes.",
+          "medium": "This circular muscle closes the eyelids and helps us blink.",
+          "advanced": "Its palpebral and orbital parts allow gentle and forceful closure of the eyelids."
+        },
+        "fr": {
+          "initial": "Il nous aide à fermer les yeux.",
+          "medium": "Ce muscle circulaire ferme les paupières et permet de cligner des yeux.",
+          "advanced": "Ses parties palpébrale et orbitaire permettent une fermeture douce ou forte des paupières."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_masseter",
@@ -1747,9 +1777,24 @@
           "initial": "Ens ajuda a mastegar.",
           "medium": "Múscul potent de la mandíbula que participa en la masticació.",
           "advanced": "S’origina a l’arc zigomàtic i s’insereix a la mandíbula; contribueix a elevar-la."
+        },
+        "es": {
+          "initial": "Nos ayuda a masticar.",
+          "medium": "Es un músculo potente de la mandíbula que participa en la masticación.",
+          "advanced": "Va del arco cigomático a la mandíbula y contribuye a elevarla."
+        },
+        "en": {
+          "initial": "It helps us chew.",
+          "medium": "It is a powerful jaw muscle involved in chewing.",
+          "advanced": "It extends from the zygomatic arch to the mandible and helps raise the jaw."
+        },
+        "fr": {
+          "initial": "Il nous aide à mâcher.",
+          "medium": "C’est un muscle puissant de la mâchoire qui participe à la mastication.",
+          "advanced": "Il va de l’arcade zygomatique à la mandibule et contribue à l’élever."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_esternoclidomastoidal",
@@ -1792,9 +1837,24 @@
           "initial": "Ens ajuda a girar el cap.",
           "medium": "Múscul del coll que gira el cap i ajuda a flexionar-lo.",
           "advanced": "Actuant unilateralment, rota el cap cap al costat contrari; bilateralment participa en la flexió cervical."
+        },
+        "es": {
+          "initial": "Nos ayuda a girar la cabeza.",
+          "medium": "Es un músculo del cuello que gira la cabeza y ayuda a flexionarla.",
+          "advanced": "Al actuar en un solo lado, gira la cabeza hacia el lado contrario; ambos lados participan en la flexión cervical."
+        },
+        "en": {
+          "initial": "It helps us turn our head.",
+          "medium": "This neck muscle turns the head and helps bend the neck.",
+          "advanced": "One side rotates the head to the opposite side; both sides contribute to neck flexion."
+        },
+        "fr": {
+          "initial": "Il nous aide à tourner la tête.",
+          "medium": "Ce muscle du cou tourne la tête et participe à la flexion du cou.",
+          "advanced": "Un seul côté tourne la tête vers le côté opposé ; les deux côtés participent à la flexion cervicale."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_trapezi",
@@ -1811,7 +1871,7 @@
       "unit_type": "muscle",
       "function_val": "Mou i estabilitza els omòplats.",
       "explanations_val": {
-        "initial": "Ajuda a moure els muscles i els omòplats.",
+        "initial": "Ajuda a moure les espatles i els omòplats.",
         "medium": "Múscul superficial de l’esquena i el coll que mou i estabilitza les escàpules.",
         "advanced": "Les fibres superiors, mitjanes i inferiors cooperen en elevació, retracció i rotació escapular."
       },
@@ -1834,12 +1894,27 @@
       "review_status": "draft_pending_expert_review",
       "explanations": {
         "val": {
-          "initial": "Ajuda a moure els muscles i els omòplats.",
+          "initial": "Ajuda a moure les espatles i els omòplats.",
           "medium": "Múscul superficial de l’esquena i el coll que mou i estabilitza les escàpules.",
           "advanced": "Les fibres superiors, mitjanes i inferiors cooperen en elevació, retracció i rotació escapular."
+        },
+        "es": {
+          "initial": "Ayuda a mover los hombros y los omóplatos.",
+          "medium": "Es un músculo superficial de la espalda y del cuello que mueve y estabiliza las escápulas.",
+          "advanced": "Sus fibras superiores, medias e inferiores cooperan en la elevación, retracción y rotación de las escápulas."
+        },
+        "en": {
+          "initial": "It helps move the shoulders and shoulder blades.",
+          "medium": "This superficial back and neck muscle moves and stabilises the scapulae.",
+          "advanced": "Its upper, middle and lower fibres cooperate in scapular elevation, retraction and rotation."
+        },
+        "fr": {
+          "initial": "Il aide à bouger les épaules et les omoplates.",
+          "medium": "Ce muscle superficiel du dos et du cou mobilise et stabilise les scapulas.",
+          "advanced": "Ses fibres supérieures, moyennes et inférieures coopèrent à l’élévation, à la rétraction et à la rotation des scapulas."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_deltoide",
@@ -1857,7 +1932,7 @@
       "function_val": "Ajuda a alçar el braç.",
       "explanations_val": {
         "initial": "Ens ajuda a alçar el braç.",
-        "medium": "Múscul que envolta el muscle i participa en diferents moviments del braç.",
+        "medium": "Múscul que envolta l’espatla i participa en diferents moviments del braç.",
         "advanced": "La porció mitjana contribueix a l’abducció; les porcions anterior i posterior participen en flexió i extensió."
       },
       "visuals": {
@@ -1880,11 +1955,26 @@
       "explanations": {
         "val": {
           "initial": "Ens ajuda a alçar el braç.",
-          "medium": "Múscul que envolta el muscle i participa en diferents moviments del braç.",
+          "medium": "Múscul que envolta l’espatla i participa en diferents moviments del braç.",
           "advanced": "La porció mitjana contribueix a l’abducció; les porcions anterior i posterior participen en flexió i extensió."
+        },
+        "es": {
+          "initial": "Nos ayuda a levantar el brazo.",
+          "medium": "Rodea el hombro y participa en distintos movimientos del brazo.",
+          "advanced": "La parte media contribuye a la abducción; las partes anterior y posterior participan en la flexión y la extensión."
+        },
+        "en": {
+          "initial": "It helps us raise the arm.",
+          "medium": "It covers the shoulder and helps with different arm movements.",
+          "advanced": "The middle part contributes to abduction; the front and back parts contribute to flexion and extension."
+        },
+        "fr": {
+          "initial": "Il nous aide à lever le bras.",
+          "medium": "Il recouvre l’épaule et participe à différents mouvements du bras.",
+          "advanced": "La partie moyenne contribue à l’abduction ; les parties antérieure et postérieure participent à la flexion et à l’extension."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_pectoral_major",
@@ -1927,9 +2017,24 @@
           "initial": "Ens ajuda a acostar els braços.",
           "medium": "Múscul del pit que participa en l’adducció i la rotació interna del braç.",
           "advanced": "Actua sobre l’húmer i contribueix a l’adducció, rotació interna i flexió segons la posició."
+        },
+        "es": {
+          "initial": "Nos ayuda a acercar los brazos al cuerpo.",
+          "medium": "Este músculo del pecho participa en la aducción y la rotación interna del brazo.",
+          "advanced": "Actúa sobre el húmero y contribuye a la aducción, rotación interna y flexión según la posición del brazo."
+        },
+        "en": {
+          "initial": "It helps bring the arms towards the body.",
+          "medium": "This chest muscle contributes to arm adduction and internal rotation.",
+          "advanced": "It acts on the humerus and contributes to adduction, internal rotation and flexion, depending on arm position."
+        },
+        "fr": {
+          "initial": "Il aide à rapprocher les bras du corps.",
+          "medium": "Ce muscle de la poitrine participe à l’adduction et à la rotation interne du bras.",
+          "advanced": "Il agit sur l’humérus et contribue à l’adduction, à la rotation interne et à la flexion selon la position du bras."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_biceps",
@@ -1989,7 +2094,7 @@
           "advanced": "Il traverse les articulations de l’épaule et du coude et participe à la supination de l’avant-bras."
         }
       },
-      "translation_status": "initial_translation_pending_linguistic_review"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_triceps",
@@ -2006,7 +2111,7 @@
       "unit_type": "muscle",
       "function_val": "Estén el colze.",
       "explanations_val": {
-        "initial": "Ens ajuda a estirar el braç.",
+        "initial": "Ens ajuda a estirar el colze.",
         "medium": "Múscul posterior del braç que permet estendre el colze.",
         "advanced": "Les tres porcions convergeixen al tendó inserit a l’olècranon del cúbit."
       },
@@ -2029,12 +2134,27 @@
       "review_status": "draft_pending_expert_review",
       "explanations": {
         "val": {
-          "initial": "Ens ajuda a estirar el braç.",
+          "initial": "Ens ajuda a estirar el colze.",
           "medium": "Múscul posterior del braç que permet estendre el colze.",
           "advanced": "Les tres porcions convergeixen al tendó inserit a l’olècranon del cúbit."
+        },
+        "es": {
+          "initial": "Nos ayuda a estirar el codo.",
+          "medium": "Es un músculo de la parte posterior del brazo que extiende el codo.",
+          "advanced": "Sus tres cabezas convergen en un tendón que se inserta en el olécranon del cúbito."
+        },
+        "en": {
+          "initial": "It helps us straighten the elbow.",
+          "medium": "This muscle at the back of the upper arm extends the elbow.",
+          "advanced": "Its three heads converge into a tendon that inserts on the olecranon of the ulna."
+        },
+        "fr": {
+          "initial": "Il nous aide à étendre le coude.",
+          "medium": "Ce muscle situé à l’arrière du bras permet l’extension du coude.",
+          "advanced": "Ses trois chefs convergent vers un tendon qui s’insère sur l’olécrane de l’ulna."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_dorsal_ample",
@@ -2077,9 +2197,24 @@
           "initial": "Ajuda a portar el braç cap arrere.",
           "medium": "Múscul ample de l’esquena que mou el braç cap al cos i cap arrere.",
           "advanced": "Participa en extensió, adducció i rotació interna de l’húmer."
+        },
+        "es": {
+          "initial": "Ayuda a llevar el brazo hacia atrás.",
+          "medium": "Este músculo ancho de la espalda mueve el brazo hacia el cuerpo y hacia atrás.",
+          "advanced": "Participa en la extensión, aducción y rotación interna del húmero."
+        },
+        "en": {
+          "initial": "It helps move the arm backwards.",
+          "medium": "This broad back muscle moves the arm towards the body and backwards.",
+          "advanced": "It contributes to extension, adduction and internal rotation of the humerus."
+        },
+        "fr": {
+          "initial": "Il aide à porter le bras vers l’arrière.",
+          "medium": "Ce large muscle du dos rapproche le bras du corps et le porte vers l’arrière.",
+          "advanced": "Il participe à l’extension, à l’adduction et à la rotation interne de l’humérus."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_recte_abdominal",
@@ -2122,9 +2257,24 @@
           "initial": "Ens ajuda a inclinar el tronc cap avant.",
           "medium": "Múscul anterior abdominal que flexiona el tronc i estabilitza la paret abdominal.",
           "advanced": "Va del pubis a les costelles i estèrnum; coopera en la flexió del tronc i la pressió abdominal."
+        },
+        "es": {
+          "initial": "Nos ayuda a inclinar el tronco hacia delante.",
+          "medium": "Este músculo anterior del abdomen flexiona el tronco y estabiliza la pared abdominal.",
+          "advanced": "Va del pubis a las costillas y al esternón; participa en la flexión del tronco y en la presión abdominal."
+        },
+        "en": {
+          "initial": "It helps us bend the trunk forwards.",
+          "medium": "This muscle at the front of the abdomen bends the trunk and stabilises the abdominal wall.",
+          "advanced": "It runs from the pubis to the ribs and sternum, helping trunk flexion and abdominal pressure."
+        },
+        "fr": {
+          "initial": "Il aide à pencher le tronc vers l’avant.",
+          "medium": "Ce muscle à l’avant de l’abdomen fléchit le tronc et stabilise la paroi abdominale.",
+          "advanced": "Il va du pubis aux côtes et au sternum et participe à la flexion du tronc et à la pression abdominale."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_oblic_extern",
@@ -2167,9 +2317,24 @@
           "initial": "Ens ajuda a girar el cos.",
           "medium": "Múscul lateral abdominal que participa en la rotació i flexió del tronc.",
           "advanced": "La contracció unilateral contribueix a la rotació contralateral i la inclinació lateral."
+        },
+        "es": {
+          "initial": "Nos ayuda a girar el cuerpo.",
+          "medium": "Este músculo lateral del abdomen participa en la rotación y flexión del tronco.",
+          "advanced": "La contracción de un solo lado contribuye a girar el tronco hacia el lado contrario y a inclinarlo lateralmente."
+        },
+        "en": {
+          "initial": "It helps us turn our body.",
+          "medium": "This muscle on the side of the abdomen helps rotate and bend the trunk.",
+          "advanced": "Contraction on one side contributes to opposite-side rotation and sideways bending of the trunk."
+        },
+        "fr": {
+          "initial": "Il nous aide à tourner le corps.",
+          "medium": "Ce muscle sur le côté de l’abdomen participe à la rotation et à la flexion du tronc.",
+          "advanced": "La contraction d’un seul côté contribue à la rotation vers le côté opposé et à l’inclinaison latérale."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_gluti_major",
@@ -2212,9 +2377,24 @@
           "initial": "Ens ajuda a alçar-nos i pujar escales.",
           "medium": "Múscul de la natja que estén el maluc i estabilitza el moviment.",
           "advanced": "És un extensor potent del maluc, especialment actiu en alçar-se, córrer i pujar."
+        },
+        "es": {
+          "initial": "Nos ayuda a levantarnos y subir escaleras.",
+          "medium": "Este músculo de la nalga extiende la cadera y estabiliza el movimiento.",
+          "advanced": "Es un potente extensor de la cadera, especialmente activo al levantarse, correr y subir."
+        },
+        "en": {
+          "initial": "It helps us stand up and climb stairs.",
+          "medium": "This buttock muscle extends the hip and helps stabilise movement.",
+          "advanced": "It is a powerful hip extensor, especially active when rising, running and climbing."
+        },
+        "fr": {
+          "initial": "Il nous aide à nous lever et à monter les escaliers.",
+          "medium": "Ce muscle de la fesse étend la hanche et stabilise le mouvement.",
+          "advanced": "C’est un puissant extenseur de la hanche, particulièrement actif pour se lever, courir et monter."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_quadriceps",
@@ -2257,9 +2437,24 @@
           "initial": "Ens ajuda a estirar el genoll.",
           "medium": "Grup de quatre músculs de la cuixa que estén el genoll.",
           "advanced": "Inclou recte femoral i tres vasts; el recte femoral també participa en flexió de maluc."
+        },
+        "es": {
+          "initial": "Nos ayuda a estirar la rodilla.",
+          "medium": "Es un grupo de cuatro músculos del muslo que extiende la rodilla.",
+          "advanced": "Incluye el recto femoral y tres vastos; el recto femoral también participa en la flexión de la cadera."
+        },
+        "en": {
+          "initial": "It helps us straighten the knee.",
+          "medium": "It is a group of four thigh muscles that extends the knee.",
+          "advanced": "It includes rectus femoris and three vastus muscles; rectus femoris also contributes to hip flexion."
+        },
+        "fr": {
+          "initial": "Il nous aide à étendre le genou.",
+          "medium": "C’est un groupe de quatre muscles de la cuisse qui étend le genou.",
+          "advanced": "Il comprend le droit fémoral et trois vastes ; le droit fémoral participe aussi à la flexion de la hanche."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_isquiotibials",
@@ -2278,7 +2473,7 @@
       "explanations_val": {
         "initial": "Ens ajuden a doblegar el genoll.",
         "medium": "Grup muscular posterior de la cuixa que flexiona el genoll i contribueix a estendre el maluc.",
-        "advanced": "Inclou semitendinós, semimembranós i cap llarg del bíceps femoral, entre altres consideracions funcionals."
+        "advanced": "El grup inclou semitendinós, semimembranós i bíceps femoral; el cap curt del bíceps femoral no travessa el maluc."
       },
       "visuals": {
         "ueco": "pendent: il·lustració anatòmicament validada",
@@ -2301,10 +2496,25 @@
         "val": {
           "initial": "Ens ajuden a doblegar el genoll.",
           "medium": "Grup muscular posterior de la cuixa que flexiona el genoll i contribueix a estendre el maluc.",
-          "advanced": "Inclou semitendinós, semimembranós i cap llarg del bíceps femoral, entre altres consideracions funcionals."
+          "advanced": "El grup inclou semitendinós, semimembranós i bíceps femoral; el cap curt del bíceps femoral no travessa el maluc."
+        },
+        "es": {
+          "initial": "Nos ayudan a doblar la rodilla.",
+          "medium": "Estos músculos de la parte posterior del muslo flexionan la rodilla y contribuyen a extender la cadera.",
+          "advanced": "Incluyen semitendinoso, semimembranoso y bíceps femoral; la cabeza corta del bíceps femoral no cruza la cadera."
+        },
+        "en": {
+          "initial": "They help us bend the knee.",
+          "medium": "These muscles at the back of the thigh bend the knee and contribute to hip extension.",
+          "advanced": "They include semitendinosus, semimembranosus and biceps femoris; the short head of biceps femoris does not cross the hip."
+        },
+        "fr": {
+          "initial": "Ils nous aident à plier le genou.",
+          "medium": "Ces muscles à l’arrière de la cuisse fléchissent le genou et contribuent à l’extension de la hanche.",
+          "advanced": "Ils comprennent le semi-tendineux, le semi-membraneux et le biceps fémoral ; le chef court du biceps fémoral ne traverse pas la hanche."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_gastrocnemi",
@@ -2347,9 +2557,24 @@
           "initial": "Ens ajuda a posar-nos de puntetes.",
           "medium": "Múscul superficial del panxell que fa flexió plantar del turmell i ajuda a flexionar el genoll.",
           "advanced": "Els dos caps travessen genoll i turmell; cooperen amb el soli en la flexió plantar."
+        },
+        "es": {
+          "initial": "Nos ayuda a ponernos de puntillas.",
+          "medium": "Este músculo superficial de la pantorrilla hace flexión plantar del tobillo y ayuda a flexionar la rodilla.",
+          "advanced": "Sus dos cabezas cruzan rodilla y tobillo y cooperan con el sóleo en la flexión plantar."
+        },
+        "en": {
+          "initial": "It helps us stand on tiptoe.",
+          "medium": "This superficial calf muscle plantar-flexes the ankle and helps bend the knee.",
+          "advanced": "Its two heads cross the knee and ankle and work with the soleus in plantar flexion."
+        },
+        "fr": {
+          "initial": "Il nous aide à nous mettre sur la pointe des pieds.",
+          "medium": "Ce muscle superficiel du mollet réalise la flexion plantaire de la cheville et aide à fléchir le genou.",
+          "advanced": "Ses deux chefs traversent le genou et la cheville et coopèrent avec le soléaire pour la flexion plantaire."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "muscle_soli",
@@ -2392,9 +2617,24 @@
           "initial": "Ens ajuda a mantindre’ns drets.",
           "medium": "Múscul profund del panxell important per a caminar i mantindre la postura.",
           "advanced": "Múscul monoarticular que contribueix a la flexió plantar i al control postural."
+        },
+        "es": {
+          "initial": "Nos ayuda a mantenernos de pie.",
+          "medium": "Es un músculo profundo de la pantorrilla importante para caminar y mantener la postura.",
+          "advanced": "Cruza la articulación del tobillo y contribuye a la flexión plantar y al control postural."
+        },
+        "en": {
+          "initial": "It helps us stay standing.",
+          "medium": "It is a deep calf muscle important for walking and maintaining posture.",
+          "advanced": "It crosses the ankle joint and contributes to plantar flexion and postural control."
+        },
+        "fr": {
+          "initial": "Il nous aide à rester debout.",
+          "medium": "C’est un muscle profond du mollet important pour marcher et maintenir la posture.",
+          "advanced": "Il traverse l’articulation de la cheville et contribue à la flexion plantaire et au contrôle postural."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     },
     {
       "id": "tendon_tendo_aquilles",
@@ -2437,9 +2677,24 @@
           "initial": "Uneix els músculs del panxell amb el taló.",
           "medium": "Tendó que connecta gastrocnemi i soli amb l’os del taló.",
           "advanced": "El tendó calcani transmet la força del tríceps sural al calcani; no és un múscul."
+        },
+        "es": {
+          "initial": "Une los músculos de la pantorrilla con el talón.",
+          "medium": "Este tendón conecta el gastrocnemio y el sóleo con el hueso del talón.",
+          "advanced": "El tendón calcáneo transmite al calcáneo la fuerza del tríceps sural; es un tendón, no un músculo."
+        },
+        "en": {
+          "initial": "It joins the calf muscles to the heel.",
+          "medium": "This tendon connects the gastrocnemius and soleus to the heel bone.",
+          "advanced": "The calcaneal tendon transmits the force of the triceps surae to the calcaneus; it is a tendon, not a muscle."
+        },
+        "fr": {
+          "initial": "Il relie les muscles du mollet au talon.",
+          "medium": "Ce tendon relie le gastrocnémien et le soléaire à l’os du talon.",
+          "advanced": "Le tendon calcanéen transmet au calcanéus la force du triceps sural ; c’est un tendon et non un muscle."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "draft_reviewed_for_consistency_v17"
     }
   ],
   "progress": {
@@ -5838,10 +6093,11 @@
   ],
   "translation_summary": {
     "names_four_languages": 120,
-    "explanations_four_languages_three_levels": 35,
-    "remaining_explanations": 85,
+    "explanations_four_languages_three_levels": 52,
+    "remaining_explanations": 68,
     "bones_full_draft_entries": 25,
-    "notes_v16": "25 bone entries have explanations in four languages at three levels. Editorial drafts; specialist linguistic and anatomical sign-off pending."
+    "muscles_full_draft_entries": 18,
+    "notes_v17": "Editorial translations; independent specialist scientific and linguistic sign-off pending."
   },
   "review_notes_v16": {
     "sources": [
@@ -5849,5 +6105,16 @@
       "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html"
     ],
     "scope": "Bone group counts and educational organisation checked against NCI/SEER. Remaining specialist scientific and language review is not complete."
+  },
+  "review_notes_v17": {
+    "sources": [
+      "https://training.seer.cancer.gov/anatomy/muscular/groups/head_neck.html",
+      "https://training.seer.cancer.gov/anatomy/muscular/groups/trunk.html",
+      "https://training.seer.cancer.gov/anatomy/muscular/groups/upper.html",
+      "https://training.seer.cancer.gov/anatomy/muscular/groups/lower.html",
+      "https://www.ncbi.nlm.nih.gov/books/NBK542215/",
+      "https://ncbi.nlm.nih.gov/books/NBK537340/"
+    ],
+    "scope": "Educational actions, tendon identity, soleus depth and short-head exception clarified. Illustrative coordinates remain provisional."
   }
 }
