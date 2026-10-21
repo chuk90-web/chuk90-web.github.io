@@ -1,6 +1,6 @@
 {
   "project": "COSMOS - El cos humà UECO",
-  "version": "v17",
+  "version": "v25",
   "catalog_total": 120,
   "anatomical_categories": {
     "ossos": [
@@ -2755,9 +2755,24 @@
           "initial": "Per la boca entra el menjar.",
           "medium": "La boca rep els aliments i, amb les dents i la llengua, ajuda a preparar-los per a engolir.",
           "advanced": "La cavitat oral inicia la digestió mecànica i facilita la barreja dels aliments amb saliva."
+        },
+        "es": {
+          "initial": "Por la boca entra la comida.",
+          "medium": "La boca recibe los alimentos y, con los dientes y la lengua, ayuda a prepararlos para tragar.",
+          "advanced": "La cavidad oral inicia la digestión mecánica y facilita la mezcla de los alimentos con saliva."
+        },
+        "en": {
+          "initial": "Food enters through the mouth.",
+          "medium": "The mouth receives food and, with the teeth and tongue, helps prepare it for swallowing.",
+          "advanced": "The oral cavity begins mechanical digestion and helps mix food with saliva."
+        },
+        "fr": {
+          "initial": "Les aliments entrent par la bouche.",
+          "medium": "La bouche reçoit les aliments et, avec les dents et la langue, aide à les préparer pour les avaler.",
+          "advanced": "La cavité buccale commence la digestion mécanique et facilite le mélange des aliments avec la salive."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_teeth",
@@ -2797,9 +2812,24 @@
           "initial": "Les dents masteguen el menjar.",
           "medium": "Les dents fragmenten els aliments perquè siga més fàcil engolir-los.",
           "advanced": "Incisius, canins, premolars i molars tenen formes adaptades a diferents funcions de la masticació."
+        },
+        "es": {
+          "initial": "Los dientes mastican la comida.",
+          "medium": "Los dientes fragmentan los alimentos para que sea más fácil tragarlos.",
+          "advanced": "Incisivos, caninos, premolares y molares tienen formas adaptadas a distintas funciones de la masticación."
+        },
+        "en": {
+          "initial": "Teeth chew food.",
+          "medium": "Teeth break food into smaller pieces that are easier to swallow.",
+          "advanced": "Incisors, canines, premolars and molars have shapes adapted to different functions in chewing."
+        },
+        "fr": {
+          "initial": "Les dents mâchent les aliments.",
+          "medium": "Les dents fragmentent les aliments pour les rendre plus faciles à avaler.",
+          "advanced": "Les incisives, les canines, les prémolaires et les molaires ont des formes adaptées aux différentes fonctions de la mastication."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_tongue",
@@ -2839,9 +2869,24 @@
           "initial": "La llengua mou el menjar.",
           "medium": "La llengua barreja el menjar amb saliva i l’ajuda a passar cap a la faringe.",
           "advanced": "La musculatura lingual forma i desplaça el bol alimentari durant la fase oral de la deglució."
+        },
+        "es": {
+          "initial": "La lengua mueve la comida.",
+          "medium": "La lengua mezcla la comida con saliva y ayuda a llevarla hacia la faringe.",
+          "advanced": "Los músculos de la lengua forman y desplazan el bolo alimenticio durante la fase oral de la deglución."
+        },
+        "en": {
+          "initial": "The tongue moves food.",
+          "medium": "The tongue mixes food with saliva and helps move it towards the pharynx.",
+          "advanced": "Tongue muscles form and move the food bolus during the oral phase of swallowing."
+        },
+        "fr": {
+          "initial": "La langue déplace les aliments.",
+          "medium": "La langue mélange les aliments avec la salive et aide à les diriger vers le pharynx.",
+          "advanced": "Les muscles de la langue forment et déplacent le bol alimentaire pendant la phase orale de la déglutition."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_salivary_glands",
@@ -2881,9 +2926,24 @@
           "initial": "Fan saliva per a la boca.",
           "medium": "La saliva humiteja el menjar i ajuda a mastegar i engolir.",
           "advanced": "Les glàndules paròtides, submandibulars i sublinguals secreten saliva amb enzims com l’amilasa."
+        },
+        "es": {
+          "initial": "Producen saliva para la boca.",
+          "medium": "La saliva humedece la comida y ayuda a masticar y tragar.",
+          "advanced": "Las glándulas parótidas, submandibulares y sublinguales secretan saliva con enzimas como la amilasa."
+        },
+        "en": {
+          "initial": "They make saliva for the mouth.",
+          "medium": "Saliva moistens food and helps with chewing and swallowing.",
+          "advanced": "The parotid, submandibular and sublingual glands secrete saliva containing enzymes such as amylase."
+        },
+        "fr": {
+          "initial": "Elles produisent la salive pour la bouche.",
+          "medium": "La salive humidifie les aliments et aide à mâcher et à avaler.",
+          "advanced": "Les glandes parotides, submandibulaires et sublinguales sécrètent de la salive contenant des enzymes comme l’amylase."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_pharynx",
@@ -2923,9 +2983,24 @@
           "initial": "El menjar passa per la faringe.",
           "medium": "La faringe és un pas compartit per l’aire i els aliments.",
           "advanced": "Durant la deglució, la coordinació muscular dirigeix el bol cap a l’esòfag i protegix les vies respiratòries."
+        },
+        "es": {
+          "initial": "La comida pasa por la faringe.",
+          "medium": "La faringe es un paso compartido por el aire y los alimentos.",
+          "advanced": "Durante la deglución, la coordinación muscular dirige el bolo hacia el esófago y protege las vías respiratorias."
+        },
+        "en": {
+          "initial": "Food passes through the pharynx.",
+          "medium": "The pharynx is a passage shared by air and food.",
+          "advanced": "During swallowing, coordinated muscle activity directs the bolus into the esophagus and protects the airways."
+        },
+        "fr": {
+          "initial": "Les aliments passent par le pharynx.",
+          "medium": "Le pharynx est un passage commun à l’air et aux aliments.",
+          "advanced": "Pendant la déglutition, la coordination musculaire dirige le bol alimentaire vers l’œsophage et protège les voies respiratoires."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_esophagus",
@@ -2965,9 +3040,24 @@
           "initial": "El menjar baixa per l’esòfag.",
           "medium": "L’esòfag és un tub muscular que porta el menjar fins a l’estómac.",
           "advanced": "Les ones peristàltiques desplacen el bol alimentari fins a l’estómac."
+        },
+        "es": {
+          "initial": "La comida baja por el esófago.",
+          "medium": "El esófago es un tubo muscular que lleva la comida hasta el estómago.",
+          "advanced": "Las ondas peristálticas desplazan el bolo alimenticio hasta el estómago."
+        },
+        "en": {
+          "initial": "Food travels down the esophagus.",
+          "medium": "The esophagus is a muscular tube that carries food to the stomach.",
+          "advanced": "Peristaltic waves move the food bolus towards the stomach."
+        },
+        "fr": {
+          "initial": "Les aliments descendent dans l’œsophage.",
+          "medium": "L’œsophage est un tube musculaire qui transporte les aliments vers l’estomac.",
+          "advanced": "Les ondes péristaltiques déplacent le bol alimentaire jusqu’à l’estomac."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_stomach",
@@ -3064,9 +3154,24 @@
           "initial": "El fetge ajuda a digerir els greixos.",
           "medium": "El fetge fabrica bilis, que ajuda a digerir els greixos.",
           "advanced": "La bilis produïda pels hepatòcits facilita l’emulsió dels greixos; el fetge també processa i emmagatzema nutrients."
+        },
+        "es": {
+          "initial": "El hígado ayuda a digerir las grasas.",
+          "medium": "El hígado fabrica bilis, que ayuda a digerir las grasas.",
+          "advanced": "La bilis producida por los hepatocitos facilita la emulsión de las grasas; el hígado también procesa y almacena nutrientes."
+        },
+        "en": {
+          "initial": "The liver helps digest fats.",
+          "medium": "The liver makes bile, which helps digest fats.",
+          "advanced": "Bile produced by hepatocytes helps emulsify fats; the liver also processes and stores nutrients."
+        },
+        "fr": {
+          "initial": "Le foie aide à digérer les graisses.",
+          "medium": "Le foie produit la bile, qui aide à digérer les graisses.",
+          "advanced": "La bile produite par les hépatocytes facilite l’émulsion des graisses ; le foie transforme et stocke aussi des nutriments."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_gallbladder",
@@ -3106,9 +3211,24 @@
           "initial": "Guarda la bilis que fa el fetge.",
           "medium": "La vesícula biliar guarda la bilis i l’envia a l’intestí quan fa falta.",
           "advanced": "Concentra la bilis hepàtica i la descarrega al duodé en resposta a senyals digestius."
+        },
+        "es": {
+          "initial": "Guarda la bilis que fabrica el hígado.",
+          "medium": "La vesícula biliar almacena la bilis y la envía al intestino cuando hace falta.",
+          "advanced": "Concentra la bilis hepática y la libera en el duodeno en respuesta a señales digestivas."
+        },
+        "en": {
+          "initial": "It stores bile made by the liver.",
+          "medium": "The gallbladder stores bile and releases it into the intestine when needed.",
+          "advanced": "It concentrates bile from the liver and releases it into the duodenum in response to digestive signals."
+        },
+        "fr": {
+          "initial": "Elle stocke la bile produite par le foie.",
+          "medium": "La vésicule biliaire stocke la bile et l’envoie dans l’intestin quand c’est nécessaire.",
+          "advanced": "Elle concentre la bile hépatique et la libère dans le duodénum en réponse aux signaux digestifs."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_pancreas",
@@ -3148,9 +3268,24 @@
           "initial": "El pàncrees ajuda a digerir el menjar.",
           "medium": "El pàncrees envia sucs digestius a l’intestí prim.",
           "advanced": "La seua funció exocrina aporta enzims i bicarbonat al duodé; l’endocrina regula la glucosa sanguínia."
+        },
+        "es": {
+          "initial": "El páncreas ayuda a digerir la comida.",
+          "medium": "El páncreas envía jugos digestivos al intestino delgado.",
+          "advanced": "Su función exocrina aporta enzimas y bicarbonato al duodeno; su función endocrina regula la glucosa sanguínea."
+        },
+        "en": {
+          "initial": "The pancreas helps digest food.",
+          "medium": "The pancreas sends digestive juices into the small intestine.",
+          "advanced": "Its exocrine function supplies enzymes and bicarbonate to the duodenum; its endocrine function regulates blood glucose."
+        },
+        "fr": {
+          "initial": "Le pancréas aide à digérer les aliments.",
+          "medium": "Le pancréas envoie des sucs digestifs dans l’intestin grêle.",
+          "advanced": "Sa fonction exocrine apporte des enzymes et du bicarbonate au duodénum ; sa fonction endocrine régule la glycémie."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_small_intestine",
@@ -3190,9 +3325,24 @@
           "initial": "L’intestí prim aprofita els nutrients.",
           "medium": "En l’intestí prim s’absorbeix la major part dels nutrients del menjar.",
           "advanced": "Duodé, jejú i ili participen en la digestió química i l’absorció gràcies a plecs, vellositats i microvellositats."
+        },
+        "es": {
+          "initial": "El intestino delgado absorbe los nutrientes.",
+          "medium": "En el intestino delgado se absorbe la mayor parte de los nutrientes de la comida.",
+          "advanced": "Duodeno, yeyuno e íleon participan en la digestión química y la absorción gracias a pliegues, vellosidades y microvellosidades."
+        },
+        "en": {
+          "initial": "The small intestine absorbs nutrients.",
+          "medium": "Most nutrients from food are absorbed in the small intestine.",
+          "advanced": "The duodenum, jejunum and ileum contribute to chemical digestion and absorption through folds, villi and microvilli."
+        },
+        "fr": {
+          "initial": "L’intestin grêle absorbe les nutriments.",
+          "medium": "La plupart des nutriments des aliments sont absorbés dans l’intestin grêle.",
+          "advanced": "Le duodénum, le jéjunum et l’iléon participent à la digestion chimique et à l’absorption grâce aux plis, aux villosités et aux microvillosités."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "digestive_large_intestine",
@@ -3232,9 +3382,24 @@
           "initial": "L’intestí gros prepara les femtes.",
           "medium": "L’intestí gros recupera aigua i ajuda a formar les femtes.",
           "advanced": "El còlon absorbeix aigua i sals; el recte emmagatzema les femtes abans de la defecació."
+        },
+        "es": {
+          "initial": "El intestino grueso forma las heces.",
+          "medium": "El intestino grueso recupera agua y ayuda a formar las heces.",
+          "advanced": "El colon absorbe agua y sales; el recto almacena las heces antes de la defecación."
+        },
+        "en": {
+          "initial": "The large intestine forms stools.",
+          "medium": "The large intestine recovers water and helps form stools.",
+          "advanced": "The colon absorbs water and salts; the rectum stores stools before defecation."
+        },
+        "fr": {
+          "initial": "Le gros intestin forme les selles.",
+          "medium": "Le gros intestin récupère de l’eau et aide à former les selles.",
+          "advanced": "Le côlon absorbe de l’eau et des sels ; le rectum stocke les selles avant la défécation."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     }
   ],
   "nervous_system": [
@@ -3331,9 +3496,24 @@
           "initial": "El cerebel ens ajuda a moure’ns amb precisió.",
           "medium": "El cerebel participa en l’equilibri i la coordinació dels moviments.",
           "advanced": "Integra informació sensorial i motora per ajustar els moviments i afavorir l’aprenentatge motor."
+        },
+        "es": {
+          "initial": "El cerebelo nos ayuda a movernos con precisión.",
+          "medium": "El cerebelo participa en el equilibrio y la coordinación de los movimientos.",
+          "advanced": "Integra información sensorial y motora para ajustar los movimientos y favorecer el aprendizaje motor."
+        },
+        "en": {
+          "initial": "The cerebellum helps us move accurately.",
+          "medium": "The cerebellum contributes to balance and movement coordination.",
+          "advanced": "It integrates sensory and motor information to adjust movements and support motor learning."
+        },
+        "fr": {
+          "initial": "Le cervelet nous aide à bouger avec précision.",
+          "medium": "Le cervelet participe à l’équilibre et à la coordination des mouvements.",
+          "advanced": "Il intègre des informations sensorielles et motrices pour ajuster les mouvements et favoriser l’apprentissage moteur."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_brainstem",
@@ -3350,7 +3530,7 @@
       "function_val": "Connecta l’encèfal amb la medul·la i participa en funcions vitals automàtiques.",
       "explanations_val": {
         "initial": "El tronc encefàlic ajuda el cos a funcionar.",
-        "medium": "Connecta parts del cervell amb la medul·la i intervé en la respiració i altres funcions automàtiques.",
+        "medium": "Connecta parts de l’encèfal amb la medul·la i intervé en la respiració i altres funcions automàtiques.",
         "advanced": "Inclou mesencèfal, pont i bulb raquidi; conté vies nervioses i nuclis importants per a funcions vitals."
       },
       "visuals": {
@@ -3370,11 +3550,26 @@
       "explanations": {
         "val": {
           "initial": "El tronc encefàlic ajuda el cos a funcionar.",
-          "medium": "Connecta parts del cervell amb la medul·la i intervé en la respiració i altres funcions automàtiques.",
+          "medium": "Connecta parts de l’encèfal amb la medul·la i intervé en la respiració i altres funcions automàtiques.",
           "advanced": "Inclou mesencèfal, pont i bulb raquidi; conté vies nervioses i nuclis importants per a funcions vitals."
+        },
+        "es": {
+          "initial": "El tronco encefálico ayuda al cuerpo a funcionar.",
+          "medium": "Conecta partes del encéfalo con la médula y participa en la respiración y otras funciones automáticas.",
+          "advanced": "Incluye mesencéfalo, puente y bulbo raquídeo; contiene vías nerviosas y núcleos importantes para funciones vitales."
+        },
+        "en": {
+          "initial": "The brainstem helps the body function.",
+          "medium": "It connects parts of the brain with the spinal cord and contributes to breathing and other automatic functions.",
+          "advanced": "It includes the midbrain, pons and medulla oblongata, with nerve pathways and nuclei important for vital functions."
+        },
+        "fr": {
+          "initial": "Le tronc cérébral aide le corps à fonctionner.",
+          "medium": "Il relie des parties de l’encéphale à la moelle épinière et participe à la respiration et à d’autres fonctions automatiques.",
+          "advanced": "Il comprend le mésencéphale, le pont et le bulbe rachidien, avec des voies nerveuses et des noyaux importants pour les fonctions vitales."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_spinal_cord",
@@ -3414,9 +3609,24 @@
           "initial": "La medul·la porta missatges pel cos.",
           "medium": "La medul·la espinal comunica l’encèfal amb moltes parts del cos.",
           "advanced": "Conté vies ascendents i descendents i circuits locals que poden generar respostes reflexes."
+        },
+        "es": {
+          "initial": "La médula lleva mensajes por el cuerpo.",
+          "medium": "La médula espinal comunica el encéfalo con muchas partes del cuerpo.",
+          "advanced": "Contiene vías ascendentes y descendentes y circuitos locales que pueden generar respuestas reflejas."
+        },
+        "en": {
+          "initial": "The spinal cord carries messages through the body.",
+          "medium": "The spinal cord connects the brain with many parts of the body.",
+          "advanced": "It contains ascending and descending pathways and local circuits that can produce reflex responses."
+        },
+        "fr": {
+          "initial": "La moelle épinière transporte des messages dans le corps.",
+          "medium": "La moelle épinière relie l’encéphale à de nombreuses parties du corps.",
+          "advanced": "Elle contient des voies ascendantes et descendantes ainsi que des circuits locaux capables de produire des réponses réflexes."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_peripheral_nerves",
@@ -3433,7 +3643,7 @@
       "function_val": "Connecten el sistema nerviós central amb diferents regions del cos.",
       "explanations_val": {
         "initial": "Els nervis porten missatges.",
-        "medium": "Els nervis perifèrics comuniquen el cervell i la medul·la amb la resta del cos.",
+        "medium": "Els nervis perifèrics comuniquen l’encèfal i la medul·la amb la resta del cos.",
         "advanced": "Són feixos d’axons del sistema nerviós perifèric; molts nervis són mixtos, amb fibres sensitives i motores."
       },
       "visuals": {
@@ -3453,11 +3663,26 @@
       "explanations": {
         "val": {
           "initial": "Els nervis porten missatges.",
-          "medium": "Els nervis perifèrics comuniquen el cervell i la medul·la amb la resta del cos.",
+          "medium": "Els nervis perifèrics comuniquen l’encèfal i la medul·la amb la resta del cos.",
           "advanced": "Són feixos d’axons del sistema nerviós perifèric; molts nervis són mixtos, amb fibres sensitives i motores."
+        },
+        "es": {
+          "initial": "Los nervios llevan mensajes.",
+          "medium": "Los nervios periféricos comunican el encéfalo y la médula con el resto del cuerpo.",
+          "advanced": "Son haces de axones del sistema nervioso periférico; muchos nervios son mixtos, con fibras sensitivas y motoras."
+        },
+        "en": {
+          "initial": "Nerves carry messages.",
+          "medium": "Peripheral nerves connect the brain and spinal cord with the rest of the body.",
+          "advanced": "They are bundles of axons in the peripheral nervous system; many nerves are mixed, containing sensory and motor fibers."
+        },
+        "fr": {
+          "initial": "Les nerfs transportent des messages.",
+          "medium": "Les nerfs périphériques relient l’encéphale et la moelle épinière au reste du corps.",
+          "advanced": "Ce sont des faisceaux d’axones du système nerveux périphérique ; beaucoup de nerfs sont mixtes, avec des fibres sensitives et motrices."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_neuron",
@@ -3497,9 +3722,24 @@
           "initial": "Les neurones envien missatges.",
           "medium": "Les neurones són cèl·lules que es comuniquen mitjançant senyals elèctrics i químics.",
           "advanced": "Presenten especialitzacions com dendrites, soma i axó; la seua morfologia varia segons la funció."
+        },
+        "es": {
+          "initial": "Las neuronas envían mensajes.",
+          "medium": "Las neuronas son células que se comunican mediante señales eléctricas y químicas.",
+          "advanced": "Tienen partes especializadas como dendritas, soma y axón; su forma varía según su función."
+        },
+        "en": {
+          "initial": "Neurons send messages.",
+          "medium": "Neurons are cells that communicate through electrical and chemical signals.",
+          "advanced": "They have specialized parts such as dendrites, a cell body and an axon; their shape varies with their function."
+        },
+        "fr": {
+          "initial": "Les neurones envoient des messages.",
+          "medium": "Les neurones sont des cellules qui communiquent par des signaux électriques et chimiques.",
+          "advanced": "Ils possèdent des parties spécialisées comme les dendrites, le corps cellulaire et l’axone ; leur forme varie selon leur fonction."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_axon",
@@ -3539,9 +3779,24 @@
           "initial": "L’axó porta el missatge d’una neurona.",
           "medium": "L’axó és una prolongació de la neurona per on es propaga el senyal nerviós.",
           "advanced": "Els potencials d’acció es propaguen per la membrana axonal; la mielina pot accelerar la conducció."
+        },
+        "es": {
+          "initial": "El axón lleva el mensaje de una neurona.",
+          "medium": "El axón es una prolongación de la neurona por la que se propaga la señal nerviosa.",
+          "advanced": "Los potenciales de acción se propagan por la membrana axonal; la mielina puede acelerar la conducción."
+        },
+        "en": {
+          "initial": "The axon carries a neuron’s message.",
+          "medium": "The axon is a projection of a neuron along which a nerve signal travels.",
+          "advanced": "Action potentials propagate along the axonal membrane; myelin can speed up conduction."
+        },
+        "fr": {
+          "initial": "L’axone transporte le message d’un neurone.",
+          "medium": "L’axone est un prolongement du neurone le long duquel se propage le signal nerveux.",
+          "advanced": "Les potentiels d’action se propagent le long de la membrane axonale ; la myéline peut accélérer la conduction."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_synapse",
@@ -3581,9 +3836,24 @@
           "initial": "En la sinapsi passa un missatge d’una cèl·lula a una altra.",
           "medium": "Una sinapsi és una zona de comunicació entre cèl·lules nervioses o entre una neurona i una altra cèl·lula.",
           "advanced": "La majoria de sinapsis són químiques i utilitzen neurotransmissors; també existeixen sinapsis elèctriques."
+        },
+        "es": {
+          "initial": "En la sinapsis pasa un mensaje de una célula a otra.",
+          "medium": "Una sinapsis es una zona de comunicación entre células nerviosas o entre una neurona y otra célula.",
+          "advanced": "La mayoría de las sinapsis son químicas y utilizan neurotransmisores; también existen sinapsis eléctricas."
+        },
+        "en": {
+          "initial": "At a synapse, a message passes from one cell to another.",
+          "medium": "A synapse is a communication site between nerve cells or between a neuron and another cell.",
+          "advanced": "Most synapses are chemical and use neurotransmitters; electrical synapses also exist."
+        },
+        "fr": {
+          "initial": "À la synapse, un message passe d’une cellule à une autre.",
+          "medium": "Une synapse est une zone de communication entre cellules nerveuses ou entre un neurone et une autre cellule.",
+          "advanced": "La plupart des synapses sont chimiques et utilisent des neurotransmetteurs ; il existe aussi des synapses électriques."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_sensory_nerves",
@@ -3623,9 +3893,24 @@
           "initial": "Ens ajuden a notar el que passa.",
           "medium": "Les fibres sensitives porten informació del cos cap a la medul·la i l’encèfal.",
           "advanced": "Les vies aferents transmeten informació de receptors; molts nervis perifèrics contenen fibres tant sensitives com motores."
+        },
+        "es": {
+          "initial": "Nos ayudan a notar lo que pasa.",
+          "medium": "Las fibras sensitivas llevan información del cuerpo hacia la médula y el encéfalo.",
+          "advanced": "Las vías aferentes transmiten información de los receptores; muchos nervios periféricos contienen fibras sensitivas y motoras."
+        },
+        "en": {
+          "initial": "They help us sense what is happening.",
+          "medium": "Sensory fibers carry information from the body towards the spinal cord and brain.",
+          "advanced": "Afferent pathways carry information from receptors; many peripheral nerves contain both sensory and motor fibers."
+        },
+        "fr": {
+          "initial": "Ils nous aident à percevoir ce qui se passe.",
+          "medium": "Les fibres sensitives transportent des informations du corps vers la moelle épinière et l’encéphale.",
+          "advanced": "Les voies afférentes transmettent les informations des récepteurs ; beaucoup de nerfs périphériques contiennent des fibres sensitives et motrices."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_motor_nerves",
@@ -3665,9 +3950,24 @@
           "initial": "Ajuden a enviar ordres als músculs.",
           "medium": "Les fibres motores porten senyals del sistema nerviós cap als músculs.",
           "advanced": "Les vies eferents somàtiques activen músculs esquelètics; els nervis perifèrics poden ser mixtos."
+        },
+        "es": {
+          "initial": "Ayudan a enviar órdenes a los músculos.",
+          "medium": "Las fibras motoras llevan señales del sistema nervioso hacia los músculos.",
+          "advanced": "Las vías eferentes somáticas activan los músculos esqueléticos; los nervios periféricos pueden ser mixtos."
+        },
+        "en": {
+          "initial": "They help send commands to muscles.",
+          "medium": "Motor fibers carry signals from the nervous system towards muscles.",
+          "advanced": "Somatic efferent pathways activate skeletal muscles; peripheral nerves may be mixed."
+        },
+        "fr": {
+          "initial": "Ils aident à envoyer des commandes aux muscles.",
+          "medium": "Les fibres motrices transportent des signaux du système nerveux vers les muscles.",
+          "advanced": "Les voies efférentes somatiques activent les muscles squelettiques ; les nerfs périphériques peuvent être mixtes."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_optic_nerve",
@@ -3706,9 +4006,24 @@
           "initial": "El nervi òptic porta informació dels ulls.",
           "medium": "El nervi òptic transmet senyals visuals de la retina cap al cervell.",
           "advanced": "El nervi cranial II està format per axons de cèl·lules ganglionars de la retina i és part del sistema nerviós central."
+        },
+        "es": {
+          "initial": "El nervio óptico lleva información de los ojos.",
+          "medium": "El nervio óptico transmite señales visuales de la retina hacia el cerebro.",
+          "advanced": "El nervio craneal II está formado por axones de células ganglionares de la retina y forma parte del sistema nervioso central."
+        },
+        "en": {
+          "initial": "The optic nerve carries information from the eyes.",
+          "medium": "The optic nerve carries visual signals from the retina towards the brain.",
+          "advanced": "Cranial nerve II consists of retinal ganglion cell axons and is part of the central nervous system."
+        },
+        "fr": {
+          "initial": "Le nerf optique transporte des informations des yeux.",
+          "medium": "Le nerf optique transmet les signaux visuels de la rétine vers le cerveau.",
+          "advanced": "Le nerf crânien II est constitué d’axones de cellules ganglionnaires de la rétine et fait partie du système nerveux central."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "nervous_sciatic_nerve",
@@ -3724,7 +4039,7 @@
       "unit_type": "nerve",
       "function_val": "Participa en la innervació motora i sensitiva de bona part de l’extremitat inferior.",
       "explanations_val": {
-        "initial": "El nervi ciàtic passa per la part de darrere de la cama.",
+        "initial": "El nervi ciàtic passa per darrere de la cuixa.",
         "medium": "El nervi ciàtic ix de la regió pèlvica i recorre la part posterior de la cuixa.",
         "advanced": "S’origina al plexe sacre (L4-S3) i habitualment es divideix en nervis tibial i fibular comú."
       },
@@ -3744,12 +4059,27 @@
       "review_status": "draft_pending_expert_review",
       "explanations": {
         "val": {
-          "initial": "El nervi ciàtic passa per la part de darrere de la cama.",
+          "initial": "El nervi ciàtic passa per darrere de la cuixa.",
           "medium": "El nervi ciàtic ix de la regió pèlvica i recorre la part posterior de la cuixa.",
           "advanced": "S’origina al plexe sacre (L4-S3) i habitualment es divideix en nervis tibial i fibular comú."
+        },
+        "es": {
+          "initial": "El nervio ciático pasa por detrás del muslo.",
+          "medium": "El nervio ciático sale de la región pélvica y recorre la parte posterior del muslo.",
+          "advanced": "Se origina en el plexo sacro (L4-S3) y habitualmente se divide en los nervios tibial y fibular común."
+        },
+        "en": {
+          "initial": "The sciatic nerve runs along the back of the thigh.",
+          "medium": "The sciatic nerve leaves the pelvic region and travels down the back of the thigh.",
+          "advanced": "It arises from the sacral plexus (L4-S3) and usually divides into the tibial and common fibular nerves."
+        },
+        "fr": {
+          "initial": "Le nerf sciatique passe à l’arrière de la cuisse.",
+          "medium": "Le nerf sciatique sort de la région pelvienne et parcourt l’arrière de la cuisse.",
+          "advanced": "Il provient du plexus sacré (L4-S3) et se divise habituellement en nerfs tibial et fibulaire commun."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     }
   ],
   "sensory_system": [
@@ -3846,9 +4176,24 @@
           "initial": "És la part transparent de davant de l’ull.",
           "medium": "La còrnia deixa passar la llum i ajuda a enfocar-la.",
           "advanced": "La còrnia aporta bona part del poder refractiu de l’ull i no conté vasos sanguinis."
+        },
+        "es": {
+          "initial": "Es la parte transparente de delante del ojo.",
+          "medium": "La córnea deja pasar la luz y ayuda a enfocarla.",
+          "advanced": "La córnea aporta gran parte del poder refractivo del ojo y no contiene vasos sanguíneos."
+        },
+        "en": {
+          "initial": "It is the transparent front part of the eye.",
+          "medium": "The cornea lets light through and helps focus it.",
+          "advanced": "The cornea provides much of the eye’s refractive power and contains no blood vessels."
+        },
+        "fr": {
+          "initial": "C’est la partie transparente à l’avant de l’œil.",
+          "medium": "La cornée laisse passer la lumière et aide à la focaliser.",
+          "advanced": "La cornée fournit une grande partie du pouvoir réfractif de l’œil et ne contient pas de vaisseaux sanguins."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_iris",
@@ -3887,9 +4232,24 @@
           "initial": "És la part acolorida de l’ull.",
           "medium": "L’iris fa més gran o més menuda la pupil·la segons la llum.",
           "advanced": "Els músculs de l’iris regulen l’obertura pupil·lar i la quantitat de llum que entra."
+        },
+        "es": {
+          "initial": "Es la parte coloreada del ojo.",
+          "medium": "El iris hace más grande o más pequeña la pupila según la luz.",
+          "advanced": "Los músculos del iris regulan la abertura pupilar y la cantidad de luz que entra."
+        },
+        "en": {
+          "initial": "It is the colored part of the eye.",
+          "medium": "The iris makes the pupil larger or smaller depending on the light.",
+          "advanced": "Iris muscles regulate the pupil’s opening and the amount of light entering the eye."
+        },
+        "fr": {
+          "initial": "C’est la partie colorée de l’œil.",
+          "medium": "L’iris agrandit ou rétrécit la pupille selon la lumière.",
+          "advanced": "Les muscles de l’iris règlent l’ouverture pupillaire et la quantité de lumière qui entre."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_pupil",
@@ -3928,9 +4288,24 @@
           "initial": "És el cercle fosc del centre de l’ull.",
           "medium": "La pupil·la és una obertura que canvia de mida.",
           "advanced": "La pupil·la és l’obertura de l’iris; no és una estructura sòlida."
+        },
+        "es": {
+          "initial": "Es el círculo oscuro del centro del ojo.",
+          "medium": "La pupila es una abertura que cambia de tamaño.",
+          "advanced": "La pupila es la abertura del iris; no es una estructura sólida."
+        },
+        "en": {
+          "initial": "It is the dark circle in the center of the eye.",
+          "medium": "The pupil is an opening that changes size.",
+          "advanced": "The pupil is the opening in the iris; it is not a solid structure."
+        },
+        "fr": {
+          "initial": "C’est le cercle sombre au centre de l’œil.",
+          "medium": "La pupille est une ouverture qui change de taille.",
+          "advanced": "La pupille est l’ouverture de l’iris ; ce n’est pas une structure solide."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_retina",
@@ -3969,9 +4344,24 @@
           "initial": "Està dins de l’ull i ajuda a veure.",
           "medium": "La retina té cèl·lules que responen a la llum.",
           "advanced": "Els bastons i els cons transformen la llum en senyals que es processen en circuits retinians."
+        },
+        "es": {
+          "initial": "Está dentro del ojo y ayuda a ver.",
+          "medium": "La retina tiene células que responden a la luz.",
+          "advanced": "Los bastones y los conos transforman la luz en señales que se procesan en los circuitos retinianos."
+        },
+        "en": {
+          "initial": "It is inside the eye and helps us see.",
+          "medium": "The retina has cells that respond to light.",
+          "advanced": "Rods and cones convert light into signals that are processed in retinal circuits."
+        },
+        "fr": {
+          "initial": "Elle est à l’intérieur de l’œil et aide à voir.",
+          "medium": "La rétine possède des cellules qui réagissent à la lumière.",
+          "advanced": "Les bâtonnets et les cônes transforment la lumière en signaux traités par les circuits rétiniens."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_outer_ear",
@@ -4010,9 +4400,24 @@
           "initial": "Amb les orelles escoltem sons.",
           "medium": "L’orella externa recull el so i el dirigeix cap al timpà.",
           "advanced": "Inclou el pavelló auricular i el conducte auditiu extern."
+        },
+        "es": {
+          "initial": "Con las orejas escuchamos sonidos.",
+          "medium": "El oído externo recoge el sonido y lo dirige hacia el tímpano.",
+          "advanced": "Incluye el pabellón auricular y el conducto auditivo externo."
+        },
+        "en": {
+          "initial": "Our ears help us hear sounds.",
+          "medium": "The outer ear collects sound and directs it towards the eardrum.",
+          "advanced": "It includes the auricle and the external auditory canal."
+        },
+        "fr": {
+          "initial": "Les oreilles nous aident à entendre les sons.",
+          "medium": "L’oreille externe recueille le son et le dirige vers le tympan.",
+          "advanced": "Elle comprend le pavillon et le conduit auditif externe."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_eardrum",
@@ -4051,9 +4456,24 @@
           "initial": "El timpà vibra amb els sons.",
           "medium": "Les vibracions del timpà passen als ossets de l’orella mitjana.",
           "advanced": "La membrana timpànica transmet vibracions mecàniques a la cadena ossicular."
+        },
+        "es": {
+          "initial": "El tímpano vibra con los sonidos.",
+          "medium": "Las vibraciones del tímpano pasan a los huesecillos del oído medio.",
+          "advanced": "La membrana timpánica transmite vibraciones mecánicas a la cadena de huesecillos."
+        },
+        "en": {
+          "initial": "The eardrum vibrates with sounds.",
+          "medium": "Eardrum vibrations pass to the tiny bones of the middle ear.",
+          "advanced": "The tympanic membrane transmits mechanical vibrations to the ossicular chain."
+        },
+        "fr": {
+          "initial": "Le tympan vibre avec les sons.",
+          "medium": "Les vibrations du tympan passent aux osselets de l’oreille moyenne.",
+          "advanced": "La membrane tympanique transmet des vibrations mécaniques à la chaîne des osselets."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_cochlea",
@@ -4092,9 +4512,24 @@
           "initial": "La còclea ajuda a escoltar.",
           "medium": "És una estructura en espiral que transforma vibracions en senyals.",
           "advanced": "Les cèl·lules ciliades de l’òrgan de Corti transdueixen el moviment del fluid coclear."
+        },
+        "es": {
+          "initial": "La cóclea ayuda a escuchar.",
+          "medium": "Es una estructura en espiral que transforma vibraciones en señales.",
+          "advanced": "Las células ciliadas del órgano de Corti convierten el movimiento del líquido coclear en señales eléctricas."
+        },
+        "en": {
+          "initial": "The cochlea helps us hear.",
+          "medium": "It is a spiral structure that converts vibrations into signals.",
+          "advanced": "Hair cells in the organ of Corti convert movement of cochlear fluid into electrical signals."
+        },
+        "fr": {
+          "initial": "La cochlée aide à entendre.",
+          "medium": "C’est une structure en spirale qui transforme les vibrations en signaux.",
+          "advanced": "Les cellules ciliées de l’organe de Corti transforment le mouvement du liquide cochléaire en signaux électriques."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_semicircular_canals",
@@ -4133,9 +4568,24 @@
           "initial": "Ajuden a notar quan girem el cap.",
           "medium": "Els canals semicirculars informen sobre els moviments de rotació.",
           "advanced": "Tres canals aproximadament perpendiculars detecten acceleracions angulars; l’equilibri també depén dels òrgans otolítics, la vista i la propiocepció."
+        },
+        "es": {
+          "initial": "Ayudan a notar cuándo giramos la cabeza.",
+          "medium": "Los canales semicirculares informan sobre los movimientos de rotación.",
+          "advanced": "Tres canales aproximadamente perpendiculares detectan aceleraciones angulares; el equilibrio también depende de los órganos otolíticos, la vista y la propiocepción."
+        },
+        "en": {
+          "initial": "They help us sense when we turn our head.",
+          "medium": "The semicircular canals provide information about rotational movements.",
+          "advanced": "Three approximately perpendicular canals detect angular acceleration; balance also depends on the otolith organs, vision and proprioception."
+        },
+        "fr": {
+          "initial": "Ils aident à sentir quand nous tournons la tête.",
+          "medium": "Les canaux semi-circulaires renseignent sur les mouvements de rotation.",
+          "advanced": "Trois canaux approximativement perpendiculaires détectent les accélérations angulaires ; l’équilibre dépend aussi des organes otolithiques, de la vue et de la proprioception."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_olfactory_receptors",
@@ -4174,9 +4624,24 @@
           "initial": "Amb el nas podem olorar.",
           "medium": "Els receptors olfactoris detecten substàncies de l’aire.",
           "advanced": "Les neurones receptores olfactives de l’epiteli olfactiu envien senyals cap al bulb olfactori."
+        },
+        "es": {
+          "initial": "Con la nariz podemos oler.",
+          "medium": "Los receptores olfativos detectan sustancias del aire.",
+          "advanced": "Las neuronas receptoras del epitelio olfativo envían señales hacia el bulbo olfatorio."
+        },
+        "en": {
+          "initial": "Our nose helps us smell.",
+          "medium": "Olfactory receptors detect substances in the air.",
+          "advanced": "Receptor neurons in the olfactory epithelium send signals towards the olfactory bulb."
+        },
+        "fr": {
+          "initial": "Le nez nous aide à sentir les odeurs.",
+          "medium": "Les récepteurs olfactifs détectent des substances dans l’air.",
+          "advanced": "Les neurones récepteurs de l’épithélium olfactif envoient des signaux vers le bulbe olfactif."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_lingual_papillae",
@@ -4215,9 +4680,24 @@
           "initial": "A la llengua hi ha parts menudetes que ens ajuden a menjar i tastar.",
           "medium": "Algunes papil·les contenen botons gustatius que detecten sabors.",
           "advanced": "No totes les papil·les tenen botons gustatius; els receptors del gust es troben en botons gustatius i no existeix un mapa rígid de sabors per zones."
+        },
+        "es": {
+          "initial": "En la lengua hay partes pequeñas que ayudan a comer y saborear.",
+          "medium": "Algunas papilas contienen botones gustativos que detectan sabores.",
+          "advanced": "No todas las papilas contienen botones gustativos; los receptores del gusto están en estos botones y no existe un mapa rígido de sabores por zonas."
+        },
+        "en": {
+          "initial": "The tongue has tiny parts that help us eat and taste.",
+          "medium": "Some papillae contain taste buds that detect tastes.",
+          "advanced": "Not all papillae contain taste buds; taste receptors are in these buds, and there is no fixed map of tastes in separate tongue regions."
+        },
+        "fr": {
+          "initial": "La langue possède de petites parties qui aident à manger et à goûter.",
+          "medium": "Certaines papilles contiennent des bourgeons gustatifs qui détectent les saveurs.",
+          "advanced": "Toutes les papilles ne contiennent pas de bourgeons gustatifs ; les récepteurs du goût sont dans ces bourgeons et il n’existe pas de carte rigide des saveurs par zones."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "sense_touch_receptors",
@@ -4256,9 +4736,24 @@
           "initial": "La pell ens ajuda a notar el contacte.",
           "medium": "Diversos receptors detecten pressió, vibració i contacte.",
           "advanced": "Els mecanoreceptors cutanis responen a diferents tipus de deformació; dolor i temperatura impliquen altres terminacions sensorials."
+        },
+        "es": {
+          "initial": "La piel nos ayuda a notar el contacto.",
+          "medium": "Varios receptores detectan presión, vibración y contacto.",
+          "advanced": "Los mecanorreceptores cutáneos responden a diferentes deformaciones; el dolor y la temperatura implican otras terminaciones sensoriales."
+        },
+        "en": {
+          "initial": "The skin helps us feel touch.",
+          "medium": "Different receptors detect pressure, vibration and touch.",
+          "advanced": "Skin mechanoreceptors respond to different deformations; pain and temperature involve other sensory endings."
+        },
+        "fr": {
+          "initial": "La peau nous aide à sentir le contact.",
+          "medium": "Différents récepteurs détectent la pression, les vibrations et le contact.",
+          "advanced": "Les mécanorécepteurs cutanés réagissent à différentes déformations ; la douleur et la température impliquent d’autres terminaisons sensorielles."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     }
   ],
   "circulatory_system": [
@@ -4335,7 +4830,7 @@
       "explanations_val": {
         "initial": "Rep sang que torna al cor.",
         "medium": "Rep sang de les venes caves.",
-        "advanced": "Desemboca al ventricle dret a través de la vàlvula tricúspide."
+        "advanced": "Comunica amb el ventricle dret a través de la vàlvula tricúspide."
       },
       "visuals": {
         "ueco": "pending_anatomically_reviewed_vector",
@@ -4356,10 +4851,25 @@
         "val": {
           "initial": "Rep sang que torna al cor.",
           "medium": "Rep sang de les venes caves.",
-          "advanced": "Desemboca al ventricle dret a través de la vàlvula tricúspide."
+          "advanced": "Comunica amb el ventricle dret a través de la vàlvula tricúspide."
+        },
+        "es": {
+          "initial": "Recibe sangre que vuelve al corazón.",
+          "medium": "Recibe sangre de las venas cavas.",
+          "advanced": "Comunica con el ventrículo derecho a través de la válvula tricúspide."
+        },
+        "en": {
+          "initial": "It receives blood returning to the heart.",
+          "medium": "It receives blood from the venae cavae.",
+          "advanced": "It communicates with the right ventricle through the tricuspid valve."
+        },
+        "fr": {
+          "initial": "Elle reçoit le sang qui revient au cœur.",
+          "medium": "Elle reçoit le sang des veines caves.",
+          "advanced": "Elle communique avec le ventricule droit par la valve tricuspide."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "circulatory_left_atrium",
@@ -4399,9 +4909,24 @@
           "initial": "Rep sang que ve dels pulmons.",
           "medium": "Rep sang de les venes pulmonars.",
           "advanced": "Comunica amb el ventricle esquerre per la vàlvula mitral."
+        },
+        "es": {
+          "initial": "Recibe sangre que viene de los pulmones.",
+          "medium": "Recibe sangre de las venas pulmonares.",
+          "advanced": "Comunica con el ventrículo izquierdo por la válvula mitral."
+        },
+        "en": {
+          "initial": "It receives blood from the lungs.",
+          "medium": "It receives blood from the pulmonary veins.",
+          "advanced": "It communicates with the left ventricle through the mitral valve."
+        },
+        "fr": {
+          "initial": "Elle reçoit le sang venant des poumons.",
+          "medium": "Elle reçoit le sang des veines pulmonaires.",
+          "advanced": "Elle communique avec le ventricule gauche par la valve mitrale."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "circulatory_right_ventricle",
@@ -4441,9 +4966,24 @@
           "initial": "Envia sang als pulmons.",
           "medium": "Impulsa la sang per l’artèria pulmonar.",
           "advanced": "L’ejecció es produeix a través de la vàlvula pulmonar."
+        },
+        "es": {
+          "initial": "Envía sangre a los pulmones.",
+          "medium": "Impulsa la sangre hacia las arterias pulmonares.",
+          "advanced": "La eyección se produce a través de la válvula pulmonar."
+        },
+        "en": {
+          "initial": "It sends blood to the lungs.",
+          "medium": "It pumps blood towards the pulmonary arteries.",
+          "advanced": "Ejection takes place through the pulmonary valve."
+        },
+        "fr": {
+          "initial": "Il envoie le sang vers les poumons.",
+          "medium": "Il propulse le sang vers les artères pulmonaires.",
+          "advanced": "L’éjection se fait par la valve pulmonaire."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "circulatory_left_ventricle",
@@ -4483,9 +5023,24 @@
           "initial": "Envia sang a tot el cos.",
           "medium": "Impulsa la sang a l’aorta.",
           "advanced": "Té una paret muscular gruixuda per generar pressió sistèmica."
+        },
+        "es": {
+          "initial": "Envía sangre a todo el cuerpo.",
+          "medium": "Impulsa la sangre hacia la aorta.",
+          "advanced": "Tiene una pared muscular gruesa para generar la presión de la circulación sistémica."
+        },
+        "en": {
+          "initial": "It sends blood throughout the body.",
+          "medium": "It pumps blood into the aorta.",
+          "advanced": "It has a thick muscular wall to generate pressure for systemic circulation."
+        },
+        "fr": {
+          "initial": "Il envoie le sang dans tout le corps.",
+          "medium": "Il propulse le sang dans l’aorte.",
+          "advanced": "Sa paroi musculaire épaisse permet de produire la pression nécessaire à la circulation systémique."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "circulatory_aorta",
@@ -4525,9 +5080,24 @@
           "initial": "És una artèria molt gran.",
           "medium": "Porta sang del cor cap al cos.",
           "advanced": "És l’artèria principal de la circulació sistèmica."
+        },
+        "es": {
+          "initial": "Es una arteria muy grande.",
+          "medium": "Lleva sangre del corazón hacia el cuerpo.",
+          "advanced": "Es la arteria principal de la circulación sistémica."
+        },
+        "en": {
+          "initial": "It is a very large artery.",
+          "medium": "It carries blood from the heart to the body.",
+          "advanced": "It is the main artery of systemic circulation."
+        },
+        "fr": {
+          "initial": "C’est une très grande artère.",
+          "medium": "Elle transporte le sang du cœur vers le corps.",
+          "advanced": "C’est l’artère principale de la circulation systémique."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "circulatory_pulmonary_arteries",
@@ -4545,7 +5115,7 @@
       "explanations_val": {
         "initial": "Porten sang cap als pulmons.",
         "medium": "Transporten sang pobra en oxigen als pulmons.",
-        "advanced": "Són una excepció a l’associació habitual entre artèries i sang oxigenada."
+        "advanced": "En la circulació després del naixement, porten sang del ventricle dret als pulmons, on s’oxigena."
       },
       "visuals": {
         "ueco": "pending_anatomically_reviewed_vector",
@@ -4566,10 +5136,25 @@
         "val": {
           "initial": "Porten sang cap als pulmons.",
           "medium": "Transporten sang pobra en oxigen als pulmons.",
-          "advanced": "Són una excepció a l’associació habitual entre artèries i sang oxigenada."
+          "advanced": "En la circulació després del naixement, porten sang del ventricle dret als pulmons, on s’oxigena."
+        },
+        "es": {
+          "initial": "Llevan sangre hacia los pulmones.",
+          "medium": "Transportan sangre con poco oxígeno hacia los pulmones.",
+          "advanced": "En la circulación posterior al nacimiento, llevan sangre del ventrículo derecho a los pulmones, donde se oxigena."
+        },
+        "en": {
+          "initial": "They carry blood to the lungs.",
+          "medium": "They carry blood low in oxygen to the lungs.",
+          "advanced": "In circulation after birth, they carry blood from the right ventricle to the lungs, where it receives oxygen."
+        },
+        "fr": {
+          "initial": "Elles transportent le sang vers les poumons.",
+          "medium": "Elles transportent du sang pauvre en oxygène vers les poumons.",
+          "advanced": "Dans la circulation après la naissance, elles transportent le sang du ventricule droit aux poumons, où il reçoit de l’oxygène."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "circulatory_pulmonary_veins",
@@ -4609,9 +5194,24 @@
           "initial": "Tornen sang dels pulmons al cor.",
           "medium": "Porten sang rica en oxigen al cor.",
           "advanced": "Habitualment quatre venes desemboquen a l’aurícula esquerra."
+        },
+        "es": {
+          "initial": "Devuelven sangre de los pulmones al corazón.",
+          "medium": "Llevan sangre rica en oxígeno al corazón.",
+          "advanced": "Habitualmente cuatro venas desembocan en la aurícula izquierda."
+        },
+        "en": {
+          "initial": "They return blood from the lungs to the heart.",
+          "medium": "They carry oxygen-rich blood to the heart.",
+          "advanced": "Usually four veins open into the left atrium."
+        },
+        "fr": {
+          "initial": "Elles ramènent le sang des poumons au cœur.",
+          "medium": "Elles transportent du sang riche en oxygène vers le cœur.",
+          "advanced": "Habituellement, quatre veines débouchent dans l’oreillette gauche."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "circulatory_vena_cava",
@@ -4651,9 +5251,24 @@
           "initial": "Tornen sang al cor.",
           "medium": "Recullen sang del cos i la porten al cor.",
           "advanced": "La vena cava superior i la inferior desemboquen a l’aurícula dreta."
+        },
+        "es": {
+          "initial": "Devuelven sangre al corazón.",
+          "medium": "Recogen sangre del cuerpo y la llevan al corazón.",
+          "advanced": "La vena cava superior y la inferior desembocan en la aurícula derecha."
+        },
+        "en": {
+          "initial": "They return blood to the heart.",
+          "medium": "They collect blood from the body and carry it to the heart.",
+          "advanced": "The superior and inferior venae cavae open into the right atrium."
+        },
+        "fr": {
+          "initial": "Elles ramènent le sang au cœur.",
+          "medium": "Elles recueillent le sang du corps et le transportent vers le cœur.",
+          "advanced": "Les veines caves supérieure et inférieure débouchent dans l’oreillette droite."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "circulatory_capillaries",
@@ -4693,9 +5308,24 @@
           "initial": "Són vasos molt menuts.",
           "medium": "Als capil·lars s’intercanvien gasos i nutrients.",
           "advanced": "Les parets fines faciliten la difusió i altres processos de transport."
+        },
+        "es": {
+          "initial": "Son vasos muy pequeños.",
+          "medium": "En los capilares se intercambian gases y nutrientes.",
+          "advanced": "Sus paredes finas facilitan la difusión y otros procesos de transporte."
+        },
+        "en": {
+          "initial": "They are tiny blood vessels.",
+          "medium": "Gases and nutrients are exchanged at capillaries.",
+          "advanced": "Their thin walls facilitate diffusion and other transport processes."
+        },
+        "fr": {
+          "initial": "Ce sont de très petits vaisseaux sanguins.",
+          "medium": "Les échanges de gaz et de nutriments se font au niveau des capillaires.",
+          "advanced": "Leurs parois fines facilitent la diffusion et d’autres processus de transport."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     }
   ],
   "respiratory_system": [
@@ -4714,8 +5344,8 @@
       "function_val": "Filtra, humiteja i tempera l’aire inspirat.",
       "explanations_val": {
         "initial": "L’aire pot entrar pel nas.",
-        "medium": "El nas prepara l’aire abans que arribe als pulmons.",
-        "advanced": "La mucosa i els cornets contribueixen a condicionar l’aire."
+        "medium": "La cavitat nasal filtra, calfa i humiteja l’aire.",
+        "advanced": "La mucosa i els cornets contribueixen a condicionar l’aire inspirat."
       },
       "visuals": {
         "ueco": "pending_anatomically_reviewed_vector",
@@ -4735,11 +5365,26 @@
       "explanations": {
         "val": {
           "initial": "L’aire pot entrar pel nas.",
-          "medium": "El nas prepara l’aire abans que arribe als pulmons.",
-          "advanced": "La mucosa i els cornets contribueixen a condicionar l’aire."
+          "medium": "La cavitat nasal filtra, calfa i humiteja l’aire.",
+          "advanced": "La mucosa i els cornets contribueixen a condicionar l’aire inspirat."
+        },
+        "es": {
+          "initial": "El aire puede entrar por la nariz.",
+          "medium": "La cavidad nasal filtra, calienta y humedece el aire.",
+          "advanced": "La mucosa y los cornetes contribuyen a acondicionar el aire inspirado."
+        },
+        "en": {
+          "initial": "Air can enter through the nose.",
+          "medium": "The nasal cavity filters, warms and moistens the air.",
+          "advanced": "The mucosa and nasal conchae help condition inhaled air."
+        },
+        "fr": {
+          "initial": "L’air peut entrer par le nez.",
+          "medium": "La cavité nasale filtre, réchauffe et humidifie l’air.",
+          "advanced": "La muqueuse et les cornets nasaux contribuent à préparer l’air inspiré."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "respiratory_pharynx",
@@ -4779,9 +5424,24 @@
           "initial": "L’aire passa per la faringe.",
           "medium": "La faringe comunica el nas i la boca amb la laringe.",
           "advanced": "Participa tant en la respiració com en la deglució."
+        },
+        "es": {
+          "initial": "El aire pasa por la faringe.",
+          "medium": "La faringe comunica la nariz y la boca con la laringe.",
+          "advanced": "Participa tanto en la respiración como en la deglución."
+        },
+        "en": {
+          "initial": "Air passes through the pharynx.",
+          "medium": "The pharynx connects the nose and mouth with the larynx.",
+          "advanced": "It contributes to both breathing and swallowing."
+        },
+        "fr": {
+          "initial": "L’air passe par le pharynx.",
+          "medium": "Le pharynx relie le nez et la bouche au larynx.",
+          "advanced": "Il participe à la respiration et à la déglutition."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "respiratory_larynx",
@@ -4821,9 +5481,24 @@
           "initial": "La laringe ens ajuda a parlar.",
           "medium": "La laringe conté els plecs vocals.",
           "advanced": "També contribueix a protegir la via aèria durant la deglució."
+        },
+        "es": {
+          "initial": "La laringe nos ayuda a hablar.",
+          "medium": "La laringe contiene los pliegues vocales.",
+          "advanced": "También contribuye a proteger la vía aérea durante la deglución."
+        },
+        "en": {
+          "initial": "The larynx helps us speak.",
+          "medium": "The larynx contains the vocal folds.",
+          "advanced": "It also helps protect the airway during swallowing."
+        },
+        "fr": {
+          "initial": "Le larynx nous aide à parler.",
+          "medium": "Le larynx contient les plis vocaux.",
+          "advanced": "Il contribue aussi à protéger les voies respiratoires pendant la déglutition."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "respiratory_trachea",
@@ -4863,9 +5538,24 @@
           "initial": "L’aire baixa per la tràquea.",
           "medium": "La tràquea connecta la laringe amb els bronquis.",
           "advanced": "Els anells cartilaginosos ajuden a mantindre-la oberta."
+        },
+        "es": {
+          "initial": "El aire baja por la tráquea.",
+          "medium": "La tráquea conecta la laringe con los bronquios.",
+          "advanced": "Los anillos cartilaginosos ayudan a mantenerla abierta."
+        },
+        "en": {
+          "initial": "Air travels down the trachea.",
+          "medium": "The trachea connects the larynx with the bronchi.",
+          "advanced": "Cartilaginous rings help keep it open."
+        },
+        "fr": {
+          "initial": "L’air descend dans la trachée.",
+          "medium": "La trachée relie le larynx aux bronches.",
+          "advanced": "Les anneaux cartilagineux aident à la maintenir ouverte."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "respiratory_bronchi",
@@ -4905,9 +5595,24 @@
           "initial": "L’aire passa pels bronquis.",
           "medium": "Els bronquis es ramifiquen en vies cada vegada més menudes.",
           "advanced": "Les ramificacions continuen en bronquíols."
+        },
+        "es": {
+          "initial": "El aire pasa por los bronquios.",
+          "medium": "Los bronquios se ramifican en vías cada vez más pequeñas.",
+          "advanced": "Sus ramificaciones continúan en bronquiolos."
+        },
+        "en": {
+          "initial": "Air passes through the bronchi.",
+          "medium": "The bronchi branch into increasingly smaller airways.",
+          "advanced": "Their branches continue into bronchioles."
+        },
+        "fr": {
+          "initial": "L’air passe par les bronches.",
+          "medium": "Les bronches se divisent en voies de plus en plus petites.",
+          "advanced": "Leurs ramifications se poursuivent dans les bronchioles."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "respiratory_lungs",
@@ -5004,9 +5709,24 @@
           "initial": "Són bossetes d’aire molt menudes.",
           "medium": "Als alvèols s’intercanvien oxigen i diòxid de carboni.",
           "advanced": "La barrera alveolocapil·lar és prima i afavoreix la difusió."
+        },
+        "es": {
+          "initial": "Son bolsas de aire muy pequeñas.",
+          "medium": "En los alvéolos se intercambian oxígeno y dióxido de carbono.",
+          "advanced": "La barrera alveolocapilar es delgada y favorece la difusión de gases."
+        },
+        "en": {
+          "initial": "They are tiny air sacs.",
+          "medium": "Oxygen and carbon dioxide are exchanged at the alveoli.",
+          "advanced": "The thin alveolar-capillary barrier facilitates gas diffusion."
+        },
+        "fr": {
+          "initial": "Ce sont de très petits sacs d’air.",
+          "medium": "Les échanges d’oxygène et de dioxyde de carbone se font au niveau des alvéoles.",
+          "advanced": "La fine barrière alvéolocapillaire facilite la diffusion des gaz."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "respiratory_diaphragm",
@@ -5046,9 +5766,24 @@
           "initial": "El diafragma ajuda a respirar.",
           "medium": "Quan es contrau baixa i augmenta el volum del tòrax.",
           "advanced": "La seua relaxació contribueix a l’expiració passiva en repòs."
+        },
+        "es": {
+          "initial": "El diafragma ayuda a respirar.",
+          "medium": "Cuando se contrae, desciende y aumenta el volumen del tórax.",
+          "advanced": "Su relajación contribuye a la espiración pasiva en reposo."
+        },
+        "en": {
+          "initial": "The diaphragm helps us breathe.",
+          "medium": "When it contracts, it moves down and increases chest volume.",
+          "advanced": "Its relaxation contributes to passive exhalation at rest."
+        },
+        "fr": {
+          "initial": "Le diaphragme aide à respirer.",
+          "medium": "Lorsqu’il se contracte, il descend et augmente le volume du thorax.",
+          "advanced": "Son relâchement contribue à l’expiration passive au repos."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     }
   ],
   "skin_immune_system": [
@@ -5147,9 +5882,24 @@
           "initial": "És la capa de fora de la pell.",
           "medium": "L’epidermis és una barrera contra el medi exterior.",
           "advanced": "Les seues cèl·lules es renoven i formen una barrera protectora."
+        },
+        "es": {
+          "initial": "Es la capa exterior de la piel.",
+          "medium": "La epidermis forma una barrera frente al medio exterior.",
+          "advanced": "Sus células se renuevan y forman una barrera protectora."
+        },
+        "en": {
+          "initial": "It is the outer layer of the skin.",
+          "medium": "The epidermis forms a barrier against the outside environment.",
+          "advanced": "Its cells renew themselves and form a protective barrier."
+        },
+        "fr": {
+          "initial": "C’est la couche externe de la peau.",
+          "medium": "L’épiderme forme une barrière contre le milieu extérieur.",
+          "advanced": "Ses cellules se renouvellent et forment une barrière protectrice."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "skin_immune_dermis",
@@ -5189,9 +5939,24 @@
           "initial": "És una capa que està davall de la pell de fora.",
           "medium": "La dermis ajuda a notar sensacions i dona suport a la pell.",
           "advanced": "Conté teixit connectiu, vasos sanguinis i terminacions nervioses."
+        },
+        "es": {
+          "initial": "Es una capa bajo la parte exterior de la piel.",
+          "medium": "La dermis ayuda a notar sensaciones y da soporte a la piel.",
+          "advanced": "Contiene tejido conectivo, vasos sanguíneos y terminaciones nerviosas."
+        },
+        "en": {
+          "initial": "It is a layer beneath the skin’s outer layer.",
+          "medium": "The dermis supports the skin and helps us feel sensations.",
+          "advanced": "It contains connective tissue, blood vessels and nerve endings."
+        },
+        "fr": {
+          "initial": "C’est une couche située sous la partie externe de la peau.",
+          "medium": "Le derme soutient la peau et aide à percevoir des sensations.",
+          "advanced": "Il contient du tissu conjonctif, des vaisseaux sanguins et des terminaisons nerveuses."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "skin_immune_sweat_gland",
@@ -5231,9 +5996,24 @@
           "initial": "Ens ajuda a suar.",
           "medium": "Quan fa calor, la suor ajuda a refredar el cos.",
           "advanced": "L’evaporació de la suor contribueix a dissipar calor."
+        },
+        "es": {
+          "initial": "Nos ayuda a sudar.",
+          "medium": "Cuando hace calor, el sudor ayuda a enfriar el cuerpo.",
+          "advanced": "La evaporación del sudor contribuye a disipar calor."
+        },
+        "en": {
+          "initial": "It helps us sweat.",
+          "medium": "When we are hot, sweat helps cool the body.",
+          "advanced": "Evaporation of sweat helps dissipate heat."
+        },
+        "fr": {
+          "initial": "Elle nous aide à transpirer.",
+          "medium": "Quand il fait chaud, la sueur aide à refroidir le corps.",
+          "advanced": "L’évaporation de la sueur contribue à dissiper la chaleur."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "skin_immune_lymph_node",
@@ -5273,9 +6053,24 @@
           "initial": "Ajuda el cos a defensar-se.",
           "medium": "Els ganglis limfàtics participen en les defenses.",
           "advanced": "Contenen cèl·lules immunitàries que reconeixen i responen a agents estranys."
+        },
+        "es": {
+          "initial": "Ayuda al cuerpo a defenderse.",
+          "medium": "Los ganglios linfáticos participan en las defensas.",
+          "advanced": "Contienen células inmunitarias que reconocen agentes extraños y responden a ellos."
+        },
+        "en": {
+          "initial": "It helps the body defend itself.",
+          "medium": "Lymph nodes contribute to the body’s defenses.",
+          "advanced": "They contain immune cells that recognize and respond to foreign agents."
+        },
+        "fr": {
+          "initial": "Il aide le corps à se défendre.",
+          "medium": "Les ganglions lymphatiques participent aux défenses du corps.",
+          "advanced": "Ils contiennent des cellules immunitaires qui reconnaissent les agents étrangers et y répondent."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "skin_immune_spleen",
@@ -5315,9 +6110,24 @@
           "initial": "La melsa ajuda a cuidar el cos.",
           "medium": "La melsa participa en la defensa i el manteniment de la sang.",
           "advanced": "Filtra la sang i contribueix a les respostes immunitàries."
+        },
+        "es": {
+          "initial": "El bazo ayuda a cuidar el cuerpo.",
+          "medium": "El bazo participa en las defensas y el mantenimiento de la sangre.",
+          "advanced": "Filtra la sangre y contribuye a las respuestas inmunitarias."
+        },
+        "en": {
+          "initial": "The spleen helps care for the body.",
+          "medium": "The spleen contributes to defense and blood maintenance.",
+          "advanced": "It filters blood and contributes to immune responses."
+        },
+        "fr": {
+          "initial": "La rate aide à protéger le corps.",
+          "medium": "La rate participe aux défenses et au maintien de la qualité du sang.",
+          "advanced": "Elle filtre le sang et contribue aux réponses immunitaires."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "skin_immune_white_blood_cells",
@@ -5357,9 +6167,24 @@
           "initial": "Són cèl·lules que ens defensen.",
           "medium": "Els glòbuls blancs ajuden a combatre infeccions.",
           "advanced": "Inclouen diferents tipus de leucòcits amb funcions complementàries."
+        },
+        "es": {
+          "initial": "Son células que nos defienden.",
+          "medium": "Los glóbulos blancos ayudan a combatir infecciones.",
+          "advanced": "Incluyen distintos tipos de leucocitos con funciones complementarias."
+        },
+        "en": {
+          "initial": "They are cells that defend us.",
+          "medium": "White blood cells help fight infections.",
+          "advanced": "They include different types of leukocytes with complementary functions."
+        },
+        "fr": {
+          "initial": "Ce sont des cellules qui nous défendent.",
+          "medium": "Les globules blancs aident à combattre les infections.",
+          "advanced": "Ils comprennent différents types de leucocytes aux fonctions complémentaires."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     }
   ],
   "urinary_system": [
@@ -5436,7 +6261,7 @@
       "explanations_val": {
         "initial": "És una part molt menuda del renyó.",
         "medium": "Moltes nefrones ajuden a fabricar l’orina.",
-        "advanced": "Combina filtració, reabsorció i secreció tubular."
+        "advanced": "Combina la filtració glomerular amb la reabsorció i la secreció tubular."
       },
       "visuals": {
         "ueco": "pending_anatomically_reviewed_vector",
@@ -5457,10 +6282,25 @@
         "val": {
           "initial": "És una part molt menuda del renyó.",
           "medium": "Moltes nefrones ajuden a fabricar l’orina.",
-          "advanced": "Combina filtració, reabsorció i secreció tubular."
+          "advanced": "Combina la filtració glomerular amb la reabsorció i la secreció tubular."
+        },
+        "es": {
+          "initial": "Es una parte muy pequeña del riñón.",
+          "medium": "Muchas nefronas ayudan a producir la orina.",
+          "advanced": "Combina la filtración glomerular con la reabsorción y la secreción tubular."
+        },
+        "en": {
+          "initial": "It is a tiny part of the kidney.",
+          "medium": "Many nephrons help produce urine.",
+          "advanced": "It combines glomerular filtration with tubular reabsorption and secretion."
+        },
+        "fr": {
+          "initial": "C’est une très petite partie du rein.",
+          "medium": "De nombreux néphrons aident à produire l’urine.",
+          "advanced": "Il associe la filtration glomérulaire à la réabsorption et à la sécrétion tubulaires."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "urinary_ureter",
@@ -5500,9 +6340,24 @@
           "initial": "Porta l’orina fins a la bufeta.",
           "medium": "Cada urèter connecta un renyó amb la bufeta.",
           "advanced": "Transporta l’orina mitjançant contraccions de la seua paret."
+        },
+        "es": {
+          "initial": "Lleva la orina hasta la vejiga.",
+          "medium": "Cada uréter conecta un riñón con la vejiga.",
+          "advanced": "Transporta la orina mediante contracciones de su pared."
+        },
+        "en": {
+          "initial": "It carries urine to the bladder.",
+          "medium": "Each ureter connects a kidney with the bladder.",
+          "advanced": "It transports urine through contractions of its wall."
+        },
+        "fr": {
+          "initial": "Il transporte l’urine jusqu’à la vessie.",
+          "medium": "Chaque uretère relie un rein à la vessie.",
+          "advanced": "Il transporte l’urine grâce aux contractions de sa paroi."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "urinary_bladder",
@@ -5542,9 +6397,24 @@
           "initial": "Guarda l’orina abans de fer pipí.",
           "medium": "La bufeta s’ompli i després es buida.",
           "advanced": "La seua paret muscular participa en la micció."
+        },
+        "es": {
+          "initial": "Guarda la orina antes de hacer pipí.",
+          "medium": "La vejiga se llena y después se vacía.",
+          "advanced": "Su pared muscular participa en la micción."
+        },
+        "en": {
+          "initial": "It stores urine before we pee.",
+          "medium": "The bladder fills and then empties.",
+          "advanced": "Its muscular wall contributes to urination."
+        },
+        "fr": {
+          "initial": "Elle stocke l’urine avant de faire pipi.",
+          "medium": "La vessie se remplit puis se vide.",
+          "advanced": "Sa paroi musculaire participe à la miction."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "urinary_urethra",
@@ -5584,9 +6454,24 @@
           "initial": "És el conducte per on ix el pipí.",
           "medium": "L’orina ix de la bufeta a través de la uretra.",
           "advanced": "Els esfínters ajuden a regular la micció."
+        },
+        "es": {
+          "initial": "Es el conducto por el que sale el pipí.",
+          "medium": "La orina sale de la vejiga a través de la uretra.",
+          "advanced": "Los esfínteres ayudan a regular la micción."
+        },
+        "en": {
+          "initial": "It is the tube through which pee leaves the body.",
+          "medium": "Urine leaves the bladder through the urethra.",
+          "advanced": "Sphincters help regulate urination."
+        },
+        "fr": {
+          "initial": "C’est le conduit par lequel le pipi sort du corps.",
+          "medium": "L’urine sort de la vessie par l’urètre.",
+          "advanced": "Les sphincters aident à réguler la miction."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     }
   ],
   "endocrine_system": [
@@ -5605,8 +6490,8 @@
       "function_val": "Allibera hormones que regulen altres funcions endocrines.",
       "explanations_val": {
         "initial": "Ajuda a enviar missatges pel cos.",
-        "medium": "La hipòfisi produeix hormones que coordinen diverses funcions.",
-        "advanced": "Està regulada per l’hipotàlem i controla diversos eixos endocrins."
+        "medium": "La hipòfisi allibera hormones que coordinen diverses funcions.",
+        "advanced": "La hipòfisi anterior produeix hormones; la posterior emmagatzema i allibera hormones fabricades a l’hipotàlem."
       },
       "visuals": {
         "ueco": "pending_anatomically_reviewed_vector",
@@ -5626,11 +6511,26 @@
       "explanations": {
         "val": {
           "initial": "Ajuda a enviar missatges pel cos.",
-          "medium": "La hipòfisi produeix hormones que coordinen diverses funcions.",
-          "advanced": "Està regulada per l’hipotàlem i controla diversos eixos endocrins."
+          "medium": "La hipòfisi allibera hormones que coordinen diverses funcions.",
+          "advanced": "La hipòfisi anterior produeix hormones; la posterior emmagatzema i allibera hormones fabricades a l’hipotàlem."
+        },
+        "es": {
+          "initial": "Ayuda a enviar mensajes por el cuerpo.",
+          "medium": "La hipófisis libera hormonas que coordinan varias funciones.",
+          "advanced": "La hipófisis anterior produce hormonas; la posterior almacena y libera hormonas fabricadas en el hipotálamo."
+        },
+        "en": {
+          "initial": "It helps send messages through the body.",
+          "medium": "The pituitary gland releases hormones that coordinate several functions.",
+          "advanced": "The anterior pituitary produces hormones; the posterior pituitary stores and releases hormones made in the hypothalamus."
+        },
+        "fr": {
+          "initial": "Elle aide à envoyer des messages dans le corps.",
+          "medium": "L’hypophyse libère des hormones qui coordonnent plusieurs fonctions.",
+          "advanced": "L’hypophyse antérieure produit des hormones ; l’hypophyse postérieure stocke et libère des hormones fabriquées dans l’hypothalamus."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "endocrine_thyroid",
@@ -5727,9 +6627,24 @@
           "initial": "Ajuden a controlar el calci del cos.",
           "medium": "Són glàndules menudes prop de la tiroide.",
           "advanced": "La parathormona participa en l’homeòstasi del calci."
+        },
+        "es": {
+          "initial": "Ayudan a controlar el calcio del cuerpo.",
+          "medium": "Son glándulas pequeñas situadas junto a la tiroides.",
+          "advanced": "La parathormona participa en la homeostasis del calcio."
+        },
+        "en": {
+          "initial": "They help control calcium in the body.",
+          "medium": "They are small glands next to the thyroid.",
+          "advanced": "Parathyroid hormone contributes to calcium homeostasis."
+        },
+        "fr": {
+          "initial": "Elles aident à contrôler le calcium dans le corps.",
+          "medium": "Ce sont de petites glandes situées près de la thyroïde.",
+          "advanced": "La parathormone participe à l’homéostasie du calcium."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "endocrine_adrenal",
@@ -5769,9 +6684,24 @@
           "initial": "Ajuden el cos a respondre als canvis.",
           "medium": "Les suprarenals fabriquen diferents hormones.",
           "advanced": "La medul·la i l’escorça suprarenals secreten hormones diferents."
+        },
+        "es": {
+          "initial": "Ayudan al cuerpo a responder a los cambios.",
+          "medium": "Las glándulas suprarrenales fabrican distintas hormonas.",
+          "advanced": "La médula y la corteza suprarrenales secretan hormonas diferentes."
+        },
+        "en": {
+          "initial": "They help the body respond to changes.",
+          "medium": "The adrenal glands make several hormones.",
+          "advanced": "The adrenal medulla and cortex secrete different hormones."
+        },
+        "fr": {
+          "initial": "Elles aident le corps à réagir aux changements.",
+          "medium": "Les glandes surrénales fabriquent différentes hormones.",
+          "advanced": "La médullosurrénale et la corticosurrénale sécrètent des hormones différentes."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "endocrine_pancreatic_islets",
@@ -5811,9 +6741,24 @@
           "initial": "Ajuden a controlar el sucre de la sang.",
           "medium": "Els illots del pàncrees fabriquen insulina i glucagó.",
           "advanced": "Les cèl·lules endocrines dels illots regulen la glucèmia."
+        },
+        "es": {
+          "initial": "Ayudan a controlar el azúcar de la sangre.",
+          "medium": "Los islotes del páncreas fabrican insulina y glucagón.",
+          "advanced": "Las células endocrinas de los islotes regulan la glucemia."
+        },
+        "en": {
+          "initial": "They help control blood sugar.",
+          "medium": "Pancreatic islets make insulin and glucagon.",
+          "advanced": "The endocrine cells of the islets regulate blood glucose."
+        },
+        "fr": {
+          "initial": "Ils aident à contrôler le sucre dans le sang.",
+          "medium": "Les îlots du pancréas fabriquent de l’insuline et du glucagon.",
+          "advanced": "Les cellules endocrines des îlots régulent la glycémie."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     }
   ],
   "reproductive_system": [
@@ -5855,9 +6800,24 @@
           "initial": "És una part de l’aparell reproductor.",
           "medium": "Els ovaris produeixen òvuls i hormones.",
           "advanced": "Els ovaris contenen fol·licles i participen en el cicle ovàric."
+        },
+        "es": {
+          "initial": "Es una parte del aparato reproductor.",
+          "medium": "Los ovarios producen óvulos y hormonas.",
+          "advanced": "Los ovarios contienen folículos y participan en el ciclo ovárico."
+        },
+        "en": {
+          "initial": "It is part of the reproductive system.",
+          "medium": "The ovaries produce egg cells and hormones.",
+          "advanced": "The ovaries contain follicles and contribute to the ovarian cycle."
+        },
+        "fr": {
+          "initial": "C’est une partie de l’appareil reproducteur.",
+          "medium": "Les ovaires produisent des ovules et des hormones.",
+          "advanced": "Les ovaires contiennent des follicules et participent au cycle ovarien."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "reproductive_uterus",
@@ -5932,7 +6892,7 @@
       "explanations_val": {
         "initial": "És una part interna del cos.",
         "medium": "La vagina és un conducte de l’aparell reproductor.",
-        "advanced": "És un conducte musculomembranós amb funcions reproductives."
+        "advanced": "És un conducte musculomembranós que comunica el coll de l’úter amb l’exterior."
       },
       "visuals": {
         "ueco": "pending_anatomically_reviewed_vector",
@@ -5953,10 +6913,25 @@
         "val": {
           "initial": "És una part interna del cos.",
           "medium": "La vagina és un conducte de l’aparell reproductor.",
-          "advanced": "És un conducte musculomembranós amb funcions reproductives."
+          "advanced": "És un conducte musculomembranós que comunica el coll de l’úter amb l’exterior."
+        },
+        "es": {
+          "initial": "Es una parte interna del cuerpo.",
+          "medium": "La vagina es un conducto del aparato reproductor.",
+          "advanced": "Es un conducto musculomembranoso que comunica el cuello del útero con el exterior."
+        },
+        "en": {
+          "initial": "It is an internal body part.",
+          "medium": "The vagina is a canal of the reproductive system.",
+          "advanced": "It is a muscular and membranous canal connecting the cervix with the outside of the body."
+        },
+        "fr": {
+          "initial": "C’est une partie interne du corps.",
+          "medium": "Le vagin est un conduit de l’appareil reproducteur.",
+          "advanced": "C’est un conduit musculomembraneux reliant le col de l’utérus à l’extérieur du corps."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "reproductive_vulva",
@@ -5973,8 +6948,8 @@
       "function_val": "Conjunt d’estructures genitals externes.",
       "explanations_val": {
         "initial": "És una part externa i íntima del cos.",
-        "medium": "La vulva és el nom de les parts genitals externes.",
-        "advanced": "Inclou els llavis, el clítoris i el vestíbul vulvar."
+        "medium": "La vulva és el nom de les parts genitals externes d’aquesta anatomia.",
+        "advanced": "Inclou els llavis, el clítoris i el vestíbul vulvar; no és el mateix que la vagina."
       },
       "visuals": {
         "ueco": "pending_anatomically_reviewed_vector",
@@ -5994,11 +6969,26 @@
       "explanations": {
         "val": {
           "initial": "És una part externa i íntima del cos.",
-          "medium": "La vulva és el nom de les parts genitals externes.",
-          "advanced": "Inclou els llavis, el clítoris i el vestíbul vulvar."
+          "medium": "La vulva és el nom de les parts genitals externes d’aquesta anatomia.",
+          "advanced": "Inclou els llavis, el clítoris i el vestíbul vulvar; no és el mateix que la vagina."
+        },
+        "es": {
+          "initial": "Es una parte externa e íntima del cuerpo.",
+          "medium": "La vulva es el nombre de los genitales externos de esta anatomía.",
+          "advanced": "Incluye los labios, el clítoris y el vestíbulo vulvar; no es lo mismo que la vagina."
+        },
+        "en": {
+          "initial": "It is an external and private body part.",
+          "medium": "The vulva is the name for the external genital parts of this anatomy.",
+          "advanced": "It includes the labia, clitoris and vulvar vestibule; it is not the same as the vagina."
+        },
+        "fr": {
+          "initial": "C’est une partie externe et intime du corps.",
+          "medium": "La vulve désigne les parties génitales externes de cette anatomie.",
+          "advanced": "Elle comprend les lèvres, le clitoris et le vestibule vulvaire ; elle est différente du vagin."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "reproductive_testis",
@@ -6038,9 +7028,24 @@
           "initial": "És una part de l’aparell reproductor.",
           "medium": "Els testicles fabriquen espermatozoides i hormones.",
           "advanced": "Contenen túbuls seminífers i cèl·lules endocrines."
+        },
+        "es": {
+          "initial": "Es una parte del aparato reproductor.",
+          "medium": "Los testículos producen espermatozoides y hormonas.",
+          "advanced": "Contienen túbulos seminíferos y células endocrinas."
+        },
+        "en": {
+          "initial": "It is part of the reproductive system.",
+          "medium": "The testes produce sperm cells and hormones.",
+          "advanced": "They contain seminiferous tubules and endocrine cells."
+        },
+        "fr": {
+          "initial": "C’est une partie de l’appareil reproducteur.",
+          "medium": "Les testicules produisent des spermatozoïdes et des hormones.",
+          "advanced": "Ils contiennent des tubes séminifères et des cellules endocrines."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     },
     {
       "id": "reproductive_penis",
@@ -6080,9 +7085,24 @@
           "initial": "És una part externa i íntima del cos.",
           "medium": "El penis forma part de l’aparell reproductor i urinari.",
           "advanced": "Conté teixit erèctil i el tram final de la uretra."
+        },
+        "es": {
+          "initial": "Es una parte externa e íntima del cuerpo.",
+          "medium": "El pene forma parte del aparato reproductor y urinario.",
+          "advanced": "Contiene tejido eréctil y el tramo final de la uretra."
+        },
+        "en": {
+          "initial": "It is an external and private body part.",
+          "medium": "The penis is part of the reproductive and urinary systems.",
+          "advanced": "It contains erectile tissue and the final part of the urethra."
+        },
+        "fr": {
+          "initial": "C’est une partie externe et intime du corps.",
+          "medium": "Le pénis fait partie des appareils reproducteur et urinaire.",
+          "advanced": "Il contient du tissu érectile et la partie finale de l’urètre."
         }
       },
-      "translation_status": "names_translated_explanations_pending"
+      "translation_status": "editorial_draft_complete_v25"
     }
   ],
   "review_notes_v12": [
@@ -6093,11 +7113,9 @@
   ],
   "translation_summary": {
     "names_four_languages": 120,
-    "explanations_four_languages_three_levels": 52,
-    "remaining_explanations": 68,
-    "bones_full_draft_entries": 25,
-    "muscles_full_draft_entries": 18,
-    "notes_v17": "Editorial translations; independent specialist scientific and linguistic sign-off pending."
+    "explanations_four_languages_three_levels": 120,
+    "remaining_explanations": 0,
+    "independent_review": "pending"
   },
   "review_notes_v16": {
     "sources": [
@@ -6116,5 +7134,24 @@
       "https://ncbi.nlm.nih.gov/books/NBK537340/"
     ],
     "scope": "Educational actions, tendon identity, soleus depth and short-head exception clarified. Illustrative coordinates remain provisional."
+  },
+  "review_notes_v25": {
+    "scope": "All 68 previously incomplete entries translated individually. Existing complete translations preserved. Selected scientific and pedagogical clarifications recorded in companion review.",
+    "sources": [
+      "https://training.seer.cancer.gov/anatomy/digestive/",
+      "https://training.seer.cancer.gov/anatomy/cardiovascular/heart/structure.html",
+      "https://training.seer.cancer.gov/anatomy/respiratory/mechanics.html",
+      "https://training.seer.cancer.gov/anatomy/nervous/organization/",
+      "https://training.seer.cancer.gov/anatomy/endocrine/glands/pituitary.html",
+      "https://training.seer.cancer.gov/anatomy/respiratory/passages/bronchi.html",
+      "https://training.seer.cancer.gov/anatomy/nervous/organization/cns.html",
+      "https://training.seer.cancer.gov/anatomy/nervous/tissue.html",
+      "https://training.seer.cancer.gov/anatomy/urinary/components/kidney.html",
+      "https://training.seer.cancer.gov/anatomy/reproductive/female/tract.html",
+      "https://training.seer.cancer.gov/anatomy/reproductive/female/genitalia.html",
+      "https://training.seer.cancer.gov/anatomy/lymphatic/components/nodes.html",
+      "https://training.seer.cancer.gov/anatomy/lymphatic/components/spleen.html"
+    ],
+    "status": "editorial_draft_not_independently_validated"
   }
 }
