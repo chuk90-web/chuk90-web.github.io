@@ -1,4 +1,4 @@
-const CACHE='cosmos-v30-20261021';
+const CACHE='cosmos-v31-20261021';
 const CORE=['./','./index.html','./catalog.json'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('cosmos-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
