@@ -1576,11 +1576,11 @@ function ambLoop(t){
   }
   if(world==="aquari"&&window.AMBL){
     const W=innerWidth,H=innerHeight;
-    if(!ambNext)ambNext=t+12000+Math.random()*15000;
+    if(!ambNext)ambNext=t+2500+Math.random()*1500;
     if(t>ambNext&&visitors.length<1){
       const ks=[];if(AMB.big)ks.push("whale","dolphin","manta","shark","turtle","tuna");if(AMB.diver)ks.push("diver");
       if(ks.length)spawnVisitor(ks[(Math.random()*ks.length)|0]);
-      ambNext=t+30000+Math.random()*40000;
+      ambNext=t+12000+Math.random()*8000;
     }
   }
   for(let i=visitors.length-1;i>=0;i--){
@@ -2783,14 +2783,14 @@ function animateAquariumArt11(t){
   const jelly=k.startsWith('medusa'),ground=k==='sol';
   if(jelly||ground){
    const n=48,dh=h/n;
-   for(let i=0;i<n;i++){const y=i*dh,ratio=y/h,a=ground?Math.pow(Math.max(0,1-ratio/.85),2)*w*.002:Math.pow(Math.max(0,(ratio-.28)/.72),1.5)*w*.045;
-    const shift=Math.sin(p*(ground?.55:1.1)-ratio*5)*a;
-    const pulse=jelly?1+Math.sin(p*1.5)*.018*(1-ratio):1;
+   for(let i=0;i<n;i++){const y=i*dh,ratio=y/h,a=ground?Math.pow(Math.max(0,1-ratio/.85),2)*w*.008:Math.pow(Math.max(0,(ratio-.28)/.72),1.5)*w*.13;
+    const shift=Math.sin(p*(ground?.75:1.8)-ratio*5)*a;
+    const pulse=jelly?1+Math.sin(p*1.5)*.065*(1-ratio):1;
     x.drawImage(im,0,y/h*im.naturalHeight,im.naturalWidth,(dh+1)/h*im.naturalHeight,shift+(1-pulse)*w/2,y,w*pulse,dh+1);
    }
   }else{
    const n=40,dw=w/n;
-   for(let i=0;i<n;i++){const u=i/n,tail=k==='bussejador'?Math.pow(u,3):Math.pow(1-u,3),amp=(k==='tortuga'?.018:k==='gamba'?.012:.028)*h;
+   for(let i=0;i<n;i++){const u=i/n,tail=k==='bussejador'?Math.pow(u,3):Math.pow(1-u,3),amp=(k==='tortuga'?.13:k==='bussejador'?.17:k==='gamba'?.05:.10)*h;
     const dy=Math.sin(p*(k==='tonyina'?2.5:1.6)-u*4)*amp*tail;
     x.drawImage(im,u*im.naturalWidth,0,(dw+1)/w*im.naturalWidth,im.naturalHeight,i*dw,dy,dw+1,h);
    }
@@ -2799,6 +2799,13 @@ function animateAquariumArt11(t){
 }
 function artLoop11(t){animateAquariumArt11(t);requestAnimationFrame(artLoop11)}
 requestAnimationFrame(artLoop11);
+
+
+// Clearly visible animation control and immediate visitor demonstrations.
+const motionButton12=document.createElement('button');motionButton12.id='motionButton12';motionButton12.style.cssText='position:fixed;right:14px;bottom:14px;z-index:6000;padding:12px 16px;border-radius:22px;background:#fff;color:#164b65;font-size:17px;min-height:48px';document.body.appendChild(motionButton12);
+function syncMotion12(){motionButton12.hidden=world!=='aquari'||document.body.classList.contains('up');motionButton12.textContent=ENV.reducedMotion?'▶ Activar animació':'🫧 Animació activa';motionButton12.setAttribute('aria-pressed',String(!ENV.reducedMotion))}
+motionButton12.onclick=()=>{ENV.reducedMotion=!ENV.reducedMotion;document.body.classList.toggle('reduced4',ENV.reducedMotion);document.body.classList.toggle('calm10',ENV.reducedMotion);$('reduced4').checked=!!ENV.reducedMotion;$('calm10').checked=!!ENV.reducedMotion;saveEnv();syncMotion12();flash(ENV.reducedMotion?'Moviment reduït activat':'Animació activada')};
+const demos12=document.createElement('div');demos12.className='ui-grid10';for(const [kind,label]of [['turtle','🐢 Veure tortuga'],['diver','🤿 Veure bussejador'],['whale','🐋 Veure balena'],['dolphin','🐬 Veure dofins']]){const btn=document.createElement('button');btn.textContent=label;btn.onclick=()=>{setWorld('aquari');$('teacherDialog10').close();spawnVisitor(kind);const group=visitors.filter(v=>v.kind===kind);group.forEach((v,i)=>{v.x=innerWidth*.22+i*v.w*.8;v.y=innerHeight*.42+i*10});if(ENV.reducedMotion)motionButton12.click()};demos12.appendChild(btn)}$('teacherDialog10').querySelector('.ui-body10').appendChild(demos12);syncMotion12();setInterval(syncMotion12,600);
 
 initShared().catch(()=>{}).then(async()=>{if(!col)await loadLocal();simulateLife();resizeLife()});
 </script>
