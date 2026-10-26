@@ -1,4 +1,4 @@
-const CACHE='mons11-6ddb6c4ec2';const APP=new URL('./Mons11.html',self.location).href;const FILES=[APP,new URL('./mons11.webmanifest',self.location).href,new URL('./mons11-icon.svg',self.location).href];
+const CACHE='mons11-b699a882e2';const APP=new URL('./Mons11.html',self.location).href;const FILES=[APP,new URL('./mons11.webmanifest',self.location).href,new URL('./mons11-icon.svg',self.location).href];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(FILES);if(!self.registration.active)await self.skipWaiting()})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('mons11-')&&key!==CACHE)await caches.delete(key);await self.clients.claim()})()));
 self.addEventListener('message',event=>{if(event.data?.type==='ACTIVATE')self.skipWaiting()});
