@@ -286,7 +286,7 @@ if(typeof module!=='undefined'&&module.exports)module.exports=Logic11;
 
 // MODULE 01-runtime.js
 /* One animation scheduler, a versioned local namespace and a single-writer lease. */
-const BUILD11='11.0.0-b699a882e2';
+const BUILD11='11.0.0-619d521c91';
 const Runtime11={paused:false,restoring:false,readOnly:false,reduced:false,quality:'balanced',errors:[],frames:0,worldHooks:{},ready:false};
 const DB11='mons-classe-v11',ENV11='mons-environment-v11',LOCK11='mons11-writer';
 const namespace11={amb:'mons11-amb',w:'mons11-world',reptes:'mons11-reptes','mons-environment-v3':ENV11,'mons-classroom-10':'mons-classroom-11'};
@@ -1453,7 +1453,39 @@ const store=(function(){
     const t=db.transaction("fish",mode),rq=fn(t.objectStore("fish"));
     t.oncomplete=()=>res(rq&&rq.result);t.onerror=t.onabort=()=>rej(t.error);
   }));
-  return{all:()=>tx("readonly",o=>o.getAll()),put:r=>tx("readwrite",o=>o.put(r)),del:id=>tx("readwrite",o=>o.delete(id))};
+  const resetWorld=async(target,keep,nextEnv)=>{
+    const db=await open(),previousEnv=localStorage.getItem(ENV11);
+    return new Promise((resolve,reject)=>{
+      const t=db.transaction("fish","readwrite"),o=t.objectStore("fish");
+      let failure,envWritten=false;
+      t.oncomplete=()=>resolve();
+      t.onabort=()=>{
+        if(envWritten){
+          try{
+            if(previousEnv===null)localStorage.removeItem(ENV11);
+            else localStorage.setItem(ENV11,previousEnv);
+          }catch{failure=Error("Recupera l’estat anterior des de Punts de recuperació.")}
+        }
+        reject(failure||t.error||Error("El reinici s’ha interromput."));
+      };
+      const scan=o.openCursor();
+      scan.onsuccess=()=>{
+        const cursor=scan.result;
+        if(cursor){
+          if((cursor.value.world||"aquari")===target)cursor.delete();
+          cursor.continue();
+          return;
+        }
+        try{
+          if(Runtime11.readOnly)throw Error("Una altra pestanya està guardant.");
+          for(const row of keep)o.put(row);
+          localStorage.setItem(ENV11,nextEnv);
+          envWritten=true;
+        }catch(e){failure=e;t.abort()}
+      };
+    });
+  };
+  return{all:()=>tx("readonly",o=>o.getAll()),put:r=>tx("readwrite",o=>o.put(r)),del:id=>tx("readwrite",o=>o.delete(id)),resetWorld};
 })();
 /* fitxa de cada peix (v1): trets propis i vida, base per a l'evolució */
 function newFish(d){
@@ -1718,7 +1750,8 @@ function buildAquarium(theme){
 /* Motor de vida v3. Temps real; 1 dia real = 1 dia de vida. */
 const DAY=86400000,clamp=(v,a=0,b=100)=>Math.max(a,Math.min(b,v));
 const ENVKEY='mons-environment-v11';
-const ENV={version:3,last:Date.now(),waste:0,oxygen:90,temperature:24,plants:20,filter:100,algae:0,autoCare:true,speed:1,events:[]};
+function aquariumDefaults11(last=Date.now()){return {last,waste:0,oxygen:90,temperature:24,plants:20,filter:100,algae:0,autoCare:true,speed:1,events:[],current:.35,light:75,vegetation:[],automaticDay:false}}
+const ENV={version:3,...aquariumDefaults11()};
 try{const e=JSON.parse(localStorage.getItem(ENVKEY)||'null');if(e&&e.version===3)Object.assign(ENV,e)}catch(e){flash('No s’ha pogut llegir l’estat ambiental.')}
 function eventLife(message){ENV.events.unshift({at:Date.now(),message});ENV.events=ENV.events.slice(0,100)}
 function saveEnv(){if(Runtime11.restoring||Runtime11.readOnly)return;ENV.night11=night;try{localStorage.setItem(ENVKEY,JSON.stringify(ENV))}catch(e){flash('No s’ha pogut desar l’ambient. Fes una còpia.')}}
@@ -2461,8 +2494,8 @@ const Checkpoints11=(()=>{
 function canWrite11(){if(Runtime11.reproCommit12){flash('S’està guardant la posta. Torna a tocar en un instant.');return false}if(Runtime11.readOnly){flash('Una altra pestanya està guardant. Tanca-la i recarrega esta.');return false}if(Runtime11.restoring){flash('Espera que acabe l’operació.');return false}return true}
 async function rawWrite11(rows,replace=false){return new Promise((resolve,reject)=>{const r=indexedDB.open(DB11,1);r.onupgradeneeded=()=>{if(!r.result.objectStoreNames.contains('fish'))r.result.createObjectStore('fish',{keyPath:'id'})};r.onerror=()=>reject(r.error);r.onsuccess=()=>{const db=r.result,t=db.transaction('fish','readwrite'),s=t.objectStore('fish');t.oncomplete=()=>{db.close();resolve()};t.onabort=t.onerror=()=>{db.close();reject(t.error||Error('No s’ha pogut guardar'))};if(replace)s.clear();for(const row of rows)s.put(row)}})}
 async function flush11(){if(!canWrite11())throw Error('No es pot guardar ara');for(const id of Object.keys(saveT)){clearTimeout(saveT[id]);delete saveT[id]}await rawWrite11([...fishes.values()].map(f=>({...f.d,id:f.id})));saveEnv()}
-function snapshot11(){
- let data={app:'mons-classe',v:11,build:BUILD11,createdAt:Date.now(),world,fish:[...fishes.values()].map(f=>({...f.d,id:f.id})),environment:ENV,reps:REP,ambience:AMB,night};data=Logic11.clone(data);
+function snapshot11(rows=[...fishes.values()].map(f=>({...f.d,id:f.id}))){
+ let data={app:'mons-classe',v:11,build:BUILD11,createdAt:Date.now(),world,fish:rows,environment:ENV,reps:REP,ambience:AMB,night};data=Logic11.clone(data);
  const pausedAt=ENV.session11?.pausedAt;if(Runtime11.paused&&Number.isFinite(pausedAt)){data=Logic11.shiftTimes(data,Math.max(0,data.createdAt-pausedAt));data.environment.session11.pausedAt=data.createdAt}
  return data;
 }
@@ -2477,7 +2510,7 @@ function prepareImport11(raw){
  const stamp=Number.isFinite(data.createdAt)?data.createdAt:Number.isFinite(e?.last)?e.last:Date.now();const rebased=Logic11.shiftTimes(data,Date.now()-stamp);rebased.createdAt=Date.now();if(rebased.environment?.session11?.paused)rebased.environment.session11.pausedAt=Date.now();return rebased;
 }
 function environmentFor11(data,mode){
- const defaults={version:3,last:Date.now(),waste:0,oxygen:90,temperature:24,plants:20,filter:100,algae:0,autoCare:true,speed:1,events:[],current:.35,light:75,registry:{},vegetation:[],automaticDay:false,reducedMotion:false,session11:{paused:false,pausedAt:0},quality11:'balanced'};
+ const defaults={version:3,...aquariumDefaults11(),registry:{},reducedMotion:false,session11:{paused:false,pausedAt:0},quality11:'balanced'};
  const e=data.environment?Logic11.clone(data.environment):mode==='merge'?Logic11.clone(ENV):defaults;
  e.version=3;e.last=Date.now();for(const k of ['dino','farm','sav'])if(e[k])e[k].last=Date.now();for(const [k,max]of [['waste',100],['oxygen',100],['plants',100],['filter',100],['algae',8],['temperature',32],['current',1],['light',100]])if(e[k]!=null)e[k]=clamp(e[k],0,max);e.events=Array.isArray(e.events)?e.events.filter(v=>v&&Number.isFinite(v.at)&&typeof v.message==='string').slice(0,100):[];e.vegetation=Array.isArray(e.vegetation)?e.vegetation.filter(v=>v&&Number.isFinite(v.x)&&Number.isFinite(v.size)).slice(0,12):[];
  if(mode==='merge'){const registry={...ENV.registry,...e.registry};e.registry=registry;e.births12={...ENV.births12,...e.births12};e.birthBase12=Math.max(ENV.birthBase12||0,e.birthBase12||0)}
@@ -2506,6 +2539,55 @@ async function migrate11(){
 async function checkpointDelete11(id){if(!canWrite11())return;const f=fishes.get(id);if(!f)return;generation12++;if(f.d.stats.courtship)clearPair12(f,fishes.get(f.d.stats.courtship.mateId));try{await flush11();await Checkpoints11.add('Esborrat: '+shortName(f),snapshot11(),{deleted:{...Logic11.clone(f.d),id}});await store.del(id);remove(id);saveEnv();flash('Dibuix esborrat. Pots desfer-ho des del panell docent.')}catch(e){flash('No s’ha esborrat: '+e.message)}}
 async function undoDelete11(){try{const p=(await Checkpoints11.list()).find(x=>x.deleted&&!x.undone);if(!p){flash('No hi ha cap esborrat recent per desfer.');return}await restore11({app:'mons-classe',v:11,createdAt:p.at,fish:[p.deleted]},'merge',{undoId:p.id})}catch(e){flash('No s’ha pogut desfer: '+e.message)}}
 
+const worldEnvKey11={dino:'dino',granja:'farm',sabana:'sav',ciutat:'city8',espai:'space9'};
+
+function resetEnvironment11(target,ids){
+ const env=Logic11.clone(ENV);
+ env.night11=night;
+ if(target==='aquari'){
+  Object.assign(env,aquariumDefaults11(nowRepro12()));
+  delete env.feedingSpot;
+  delete env.lastFeeding;
+  delete env.births12;
+  delete env.birthBase12;
+ }else{
+  const key=worldEnvKey11[target];
+  env[key]=key==='dino'?Logic11.clone(DINO_DEFAULT):Runtime11.worldHooks[key].validate(undefined);
+  if(Object.hasOwn(env[key],'last'))env[key].last=nowRepro12();
+ }
+ for(const [id,entry] of Object.entries(env.registry||{})){
+  // Legacy family entries exist only for the aquarium and dinosaurs.
+  const registryWorld=entry?.taxon==='prehistoric'?'dino':'aquari';
+  if(ids.has(id)||registryWorld===target)delete env.registry[id];
+ }
+ return env;
+}
+
+async function resetWorld11(target){
+ if(!Runtime11.ready||target!==world||!canWrite11())throw Error('El món encara no està disponible per a reiniciar-lo.');
+ if(col)throw Error('El reinici està disponible per als mons guardats en este dispositiu.');
+ generation12++;
+ Runtime11.restoring=true;
+ const pending=Object.keys(saveT);
+ for(const id of pending){clearTimeout(saveT[id]);delete saveT[id]}
+ try{
+  const disk=await store.all();
+  const live=[...fishes.values()].map(f=>({...f.d,id:f.id}));
+  const rows=new Map(disk.map(row=>[row.id,row]));
+  for(const row of live)rows.set(row.id,row);
+  const ids=new Set([...rows.values()].filter(row=>(row.world||'aquari')===target).map(row=>row.id));
+  await Checkpoints11.add('Abans de reiniciar · '+WORLDS[target].tab,snapshot11([...rows.values()]));
+  const nextEnv=JSON.stringify(resetEnvironment11(target,ids));
+  await store.resetWorld(target,live.filter(row=>!ids.has(row.id)),nextEnv);
+ }catch(e){
+  Runtime11.restoring=false;
+  for(const id of pending)persist(fishes.get(id));
+  throw e;
+ }
+ try{sessionStorage.setItem('mons11-reset-done',target)}catch{}
+ location.reload();
+}
+
 
 // MODULE 91-reproduction.js
 /* One aquarium birth transition, atomic clutches and shared egg geometry. */
@@ -2533,7 +2615,7 @@ renderNests4=function(){nestLayer4.replaceChildren();const seen=new Set();for(co
 $('lifeSpeed').onchange=e=>{if(!canWrite11())return;const next=+e.target.value;if(![1,24,144].includes(next))return;if(!Runtime11.paused)simulateLife();const now=nowRepro12(),old=ENV.speed;for(const f of fishes.values())if((f.d.world||'aquari')==='aquari'){Repro12.rescale(f.d.stats,now,old,next);persist(f)}ENV.speed=next;saveEnv();renderLife()};
 const eggStyle12=document.createElement('style');eggStyle12.textContent='.fish.egghold>img{visibility:hidden}.egg12{margin:0!important;transform:translate(-50%,-50%);background:none!important;box-shadow:none!important;border:0!important;pointer-events:none}.egg12 canvas{display:block;max-width:none}.egg-hit12{position:absolute;width:48px;height:48px;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:auto;cursor:pointer}.egg12 img{visibility:visible!important}body.student10 #reproductionNote12{display:none}';document.head.appendChild(eggStyle12);
 /* Ordinary uploads share the same transactional capacity boundary as clutches. */
-store.put=async row=>{if(commitParents12.has(row.id))return;return new Promise((resolve,reject)=>{const r=indexedDB.open(DB11,1);r.onerror=()=>reject(r.error);r.onsuccess=()=>{const db=r.result,t=db.transaction('fish','readwrite'),s=t.objectStore('fish');let failure;t.oncomplete=()=>{db.close();resolve()};t.onerror=t.onabort=()=>{db.close();reject(failure||t.error)};const q=s.getAll();q.onsuccess=()=>{if(!q.result.some(d=>d.id===row.id)&&q.result.filter(d=>(d.world||'aquari')===(row.world||'aquari')).length>=MAXPOP){failure=Error('Màxim 30 habitants guardats per món');t.abort();return}s.put(row)}}})};
+store.put=async row=>{if(commitParents12.has(row.id))return;return new Promise((resolve,reject)=>{const r=indexedDB.open(DB11,1);r.onerror=()=>reject(r.error);r.onsuccess=()=>{const db=r.result,t=db.transaction('fish','readwrite'),s=t.objectStore('fish');let failure;t.oncomplete=()=>{db.close();resolve()};t.onerror=t.onabort=()=>{db.close();reject(failure||t.error)};const q=s.getAll();q.onsuccess=()=>{if(Runtime11.restoring||Runtime11.readOnly){failure=Error('Escriptura bloquejada');t.abort();return}if(!q.result.some(d=>d.id===row.id)&&q.result.filter(d=>(d.world||'aquari')===(row.world||'aquari')).length>=MAXPOP){failure=Error('Màxim 30 habitants guardats per món');t.abort();return}s.put(row)}}})};
 const validateImportBefore12=prepareImport11;prepareImport11=function(raw){for(const d of raw.fish||[]){const c=d.stats?.courtship;if((d.world||'aquari')==='aquari'&&c&&(!Number.isFinite(c.startedAt)||typeof c.mateId!=='string'||!Number.isFinite(c.nestX)||!Number.isFinite(c.nestY)))throw Error('La còpia conté un festeig malformat')}const data=validateImportBefore12(raw);if(data.environment){const e=data.environment;e.births12=Object.fromEntries(Object.entries(e.births12&&typeof e.births12==='object'?e.births12:{}).filter(([id,b])=>typeof id==='string'&&id.length<=200&&b&&Number.isFinite(b.at)).slice(0,10000));e.birthBase12=Number.isFinite(e.birthBase12)?clamp(e.birthBase12,0,1e9):Math.max(0,(data.reps?.c?.hatched||0)-Object.keys(e.births12).length)}for(const d of data.fish)if((d.world||'aquari')==='aquari'){const s=d.stats;for(const k of ['eggDuration','eggStarted','eggUntil'])if(s[k]!=null&&(!Number.isFinite(s[k])||s[k]<0))throw Error('Termini d’incubació no vàlid');if(s.eggUntil&&(!(s.eggDuration>0)||s.eggDuration>3650*DAY||s.eggStarted>s.eggUntil||s.eggStarted!=null&&Math.abs(s.eggUntil-s.eggStarted-s.eggDuration)>Math.max(1000,s.eggDuration*.001)))throw Error('Durada o inici d’incubació incoherent')}return data};
 
 function repairCourts12(){for(const f of fishes.values()){if((f.d.world||'aquari')!=='aquari')continue;const s=f.d.stats;if(s.eggUntil){if(!(s.eggDuration>0)||!Number.isFinite(s.eggDuration))s.eggDuration=speciesOf(f).egg*DAY/ENV.speed;s.eggStarted=s.eggUntil-s.eggDuration;if(!Number.isInteger(s.nestSlot12))s.nestSlot12=slot12();persist(f)}const c=s.courtship;if(c&&!Number.isInteger(c.slot)){c.slot=slot12();const mate=fishes.get(c.mateId);if(mate?.d.stats.courtship?.mateId===f.id)mate.d.stats.courtship.slot=c.slot;persist(f);if(mate)persist(mate)}}const rows=[...fishes.values()].map(f=>({...f.d,id:f.id}));try{Repro12.validateRows(rows,ENV.registry)}catch{for(const f of fishes.values())if((f.d.world||'aquari')==='aquari'&&f.d.stats.courtship){delete f.d.stats.courtship;persist(f)}eventLife('S’han reiniciat parelles antigues incoherents; els habitants es conserven.')}ENV.births12=ENV.births12&&typeof ENV.births12==='object'?ENV.births12:{};ENV.birthBase12=Math.max(Number.isFinite(ENV.birthBase12)?ENV.birthBase12:0,(REP.c.hatched||0)-Object.keys(ENV.births12).length);REP.c.hatched=ENV.birthBase12+Object.keys(ENV.births12).length;saveEnv();saveRep()}
@@ -2593,6 +2675,35 @@ let svgPending11=false;const svgObserver11=new MutationObserver(()=>{if(svgPendi
 /* Leave the modal top layer when opening an inhabitant's existing book. */
 document.addEventListener('click',e=>{if(e.target.closest('#inhabitants4 button,#preRoster5 button,#farmRoster6 button,#savRoster7 button,#cityRoster8 button,#spaceRoster9 button')&&$('teacherDialog10').open)$('teacherDialog10').close()});
 
+const resetButton11=button11(settings11.querySelector('.ui-grid10'),'↻ Reiniciar este món',()=>{
+ if(!canWrite11())return;
+ const target=world;
+ const body=review11('Reiniciar · '+WORLDS[target].tab);
+ const count=worldPopulation11(target);
+ message11(body,(count===1?'S’esborrarà 1 habitant.':'S’esborraran '+count+' habitants.')+' També es perdran els ous, les cries en gestació i el progrés de la simulació d’este món.');
+ message11(body,'Es conservaran els altres mons, els reptes de classe i la decoració triada. Abans es guardarà una còpia completa en Punts de recuperació.');
+ const actions=el11('div',null,{class:'ui-grid10'});
+ const cancel=button11(actions,'Cancel·lar',()=>reviewDialog11.close());
+ const confirm=button11(actions,'Reiniciar este món',async()=>{
+  cancel.disabled=confirm.disabled=$('reviewClose11').disabled=true;
+  status.textContent='Guardant el punt de recuperació i reiniciant…';
+  try{await resetWorld11(target)}catch(e){
+   status.textContent='No s’ha pogut reiniciar el món. '+e.message;
+   cancel.disabled=confirm.disabled=$('reviewClose11').disabled=false;
+   confirm.focus();
+  }
+ });
+ confirm.classList.add('reset-danger11');
+ body.appendChild(actions);
+ const status=message11(body,'');
+ status.setAttribute('role','status');
+ cancel.focus();
+});
+resetButton11.id='resetWorld11';
+resetButton11.setAttribute('aria-haspopup','dialog');
+reviewDialog11.addEventListener('cancel',e=>{if(Runtime11.restoring)e.preventDefault()});
+controlsStyle11.textContent+='.reset-danger11{background:#9d2638!important;color:#fff!important}';
+
 
 // MODULE 94-camera-export.js
 /* Current aquarium artwork is also used by the observation camera. */
@@ -2624,6 +2735,14 @@ if('serviceWorker'in navigator&&window.isSecureContext){navigator.serviceWorker.
 night=ENV.night11===true;Object.values(SCENES).forEach(scene=>scene.classList.toggle('night',night));$('nightBtn').textContent=night?'☀️ Dia':'🌙 Nit';
 const teacherClosePrevious11=$('teacherClose10').onclick;$('teacherClose10').onclick=e=>{teacherClosePrevious11(e);if(pinData11)$('returnStudent10').click()};$('teacherDialog10').addEventListener('cancel',()=>{if(pinData11)setTimeout(()=>$('returnStudent10').click(),0)});
 initShared().then(async()=>{await migrate11();await loadLocal();Runtime11.ready=true;repairCourts12();if(!Runtime11.paused&&!Runtime11.readOnly)simulateLife();resizeLife();syncControls11();for(const f of fishes.values()){const im=f.el.querySelector('img');if(im)im.alt='Dibuix de '+shortName(f)}setTimeout(()=>uniqueSVG11(document),0)}).catch(e=>{Runtime11.ready=true;flash('No s’han carregat totes les dades: '+e.message)});
+
+try{
+ const resetDone=sessionStorage.getItem('mons11-reset-done');
+ if(Object.hasOwn(WORLDS,resetDone)){
+  sessionStorage.removeItem('mons11-reset-done');
+  flash(WORLDS[resetDone].tab+' reiniciat. La còpia està en Punts de recuperació.');
+ }
+}catch{}
 
 })();
 </script>
