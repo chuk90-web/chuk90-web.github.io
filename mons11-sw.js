@@ -1,3 +1,4 @@
+// Mons11: esta clau vincula la còpia sense connexió a la versió publicada.
 const CACHE='mons11-619d521c91';const APP=new URL('./Mons11.html',self.location).href;const FILES=[APP,new URL('./mons11.webmanifest',self.location).href,new URL('./mons11-icon.svg',self.location).href];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(FILES);if(!self.registration.active)await self.skipWaiting()})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('mons11-')&&key!==CACHE)await caches.delete(key);await self.clients.claim()})()));
