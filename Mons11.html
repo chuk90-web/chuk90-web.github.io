@@ -286,7 +286,7 @@ if(typeof module!=='undefined'&&module.exports)module.exports=Logic11;
 
 // MODULE 01-runtime.js
 /* One animation scheduler, a versioned local namespace and a single-writer lease. */
-const BUILD11='11.0.0-619d521c91';
+const BUILD11='11.0.0-91fe7f565f';
 const Runtime11={paused:false,restoring:false,readOnly:false,reduced:false,quality:'balanced',errors:[],frames:0,worldHooks:{},ready:false};
 const DB11='mons-classe-v11',ENV11='mons-environment-v11',LOCK11='mons11-writer';
 const namespace11={amb:'mons11-amb',w:'mons11-world',reptes:'mons11-reptes','mons-environment-v3':ENV11,'mons-classroom-10':'mons-classroom-11'};
@@ -360,7 +360,7 @@ function addFish(id,d){
   const img=new Image();img.alt="Dibuix de l’habitant";el.appendChild(img);
   const W=innerWidth,H=innerHeight;
   const f={id,el,d,x:Math.random()*Math.max(1,W-200),y:H*.15+Math.random()*H*.5,
-    vx:(Math.random()<.5?-1:1)*(.5+Math.random()*.9),vy:(Math.random()-.5)*.25,ph:Math.random()*6,w:100,h:70,boost:0,pause:0,mode:"free",nextCave:clock11+4000+Math.random()*9000};
+    vx:(Math.random()<.5?-1:1)*(.5+Math.random()*.9),vy:(Math.random()-.5)*.25,ph:Math.random()*6,w:100,h:70,boost:0,pause:0,mode:"free",nextCave:clock11+45000+Math.random()*75000};
   img.onload=()=>{
     f.w=Math.max(90,Math.min(230,W*.2))*(d.visualScale||1);
     f.h=f.w*img.naturalHeight/img.naturalWidth;if(f.h>H*.32){f.h=H*.32;f.w=f.h*img.naturalWidth/img.naturalHeight}
@@ -382,37 +382,63 @@ function remove(id){
 }
 let caveT=-9999,caveC=[];
 function getCaves(t){
-  if(t-caveT>800){caveT=t;caveC=[...tank.querySelectorAll(".cave")].map(d=>({x:d.offsetLeft+d.offsetWidth/2,y:d.offsetTop+d.offsetHeight,w:d.offsetWidth,h:d.offsetHeight}))}
+  if(t-caveT>800){caveT=t;caveC=[...tank.querySelectorAll(".cave")].map(d=>({el:d,x:d.offsetLeft+d.offsetWidth/2,y:d.offsetTop+d.offsetHeight,w:d.offsetWidth,h:d.offsetHeight}))}
   return caveC;
+}
+function swimRoute11(f,t,swimming,width,top,bottom){
+  const maxX=Math.max(0,width-f.w),maxY=Math.max(top,bottom-f.h);
+  if(!f.swimRoute||f.swimRoute.until<t){
+    const lane=f.swimRoute?(f.swimRoute.lane+f.swimRoute.direction+3)%3:swimming.indexOf(f)%3;
+    const direction=f.swimRoute?.direction||(f.ph<3?1:-1);
+    const side=f.x<maxX*.5?1:0;
+    const columns=side?[.88,.65]:[.12,.35];
+    const depth=.13+lane*.37;
+    const choices=columns.map(x=>({x,y:depth+(Math.random()-.5)*.10}));
+    const crowd=point=>swimming.reduce((total,q)=>{
+      if(q===f)return total;
+      const qx=q.x/Math.max(1,width-q.w),qy=(q.y-top)/Math.max(1,bottom-q.h-top);
+      return total+(Math.abs(qx-point.x)<.20&&Math.abs(qy-point.y)<.20?1:0)
+        +(q.swimRoute&&Math.abs(q.swimRoute.x-point.x)<.20&&q.swimRoute.lane===lane?1:0);
+    },0);
+    const target=crowd(choices[0])<=crowd(choices[1])?choices[0]:choices[1];
+    f.swimRoute={...target,lane,direction,until:t+50000};
+  }
+  const route=f.swimRoute,dx=route.x*maxX-f.x,dy=top+route.y*(maxY-top)-f.y;
+  const speed=[1.5,1.7,1.15][route.lane];
+  f.vx+=(clamp(dx*.045,-speed,speed)-f.vx)*.15;
+  f.vy+=(clamp(dy*.025,-1,1)-f.vy)*.15;
+  if(Math.abs(dx)<16&&Math.abs(dy)<10)route.until=t;
+  f.activity=night?'Nada a poc a poc':['Nada prop de la superfície','Travessa les aigües mitjanes','Explora el fons'][route.lane];
 }
 function loop(t){
   if(world!=="aquari"){requestAnimationFrame(loop);return}
   const dt=Math.min(6,Math.max(.1,(t-(loop.last||t-16.667))/16.667));loop.last=t;
-  const W=tank.clientWidth,H=tank.clientHeight,floor=H*.7,yTop=Math.max(80,(document.querySelector("header")||{}).offsetHeight||80),cs=getCaves(t);
+  const W=tank.clientWidth,H=tank.clientHeight,floor=H*.76,yTop=Math.max(80,(document.querySelector("header")||{}).offsetHeight||80),cs=getCaves(t);
+  if(!W||!H){requestAnimationFrame(loop);return}
+  const swimming=[...fishes.values()].filter(f=>(f.d.world||"aquari")==="aquari"&&f.d.taxon==="fish"&&f.d.kind!=="walk"&&!f.egg);
+  let caveBusy=[...fishes.values()].some(f=>f.cave?.el.isConnected&&(f.mode==="inside"||f.mode==="toCave"));
   fishes.forEach(f=>{
     if(f.d.world&&f.d.world!=="aquari")return;
     if(f.egg){eggTick(f,t);return}
     const walk=f.d.kind==="walk";const step=dt*(ENV.reducedMotion?.5:1)*(night?.3:1)*(.45+.55*((f.d.stats.health||100)/100));
-    if(f.mode==="free"){feedSteer(f,t,walk?"walk":"swim");behaviorSteer(f,t,walk);if(walk)walkerDepth(f,t)}
+    if(f.mode==="free"){feedSteer(f,t,walk?"walk":"swim");behaviorSteer(f,t,walk,swimming,W,yTop,floor);if(walk)walkerDepth(f,t)}
     const goal=c=>({x:c.x-f.w/2,y:walk?c.y-f.h-4:c.y-c.h*.24-f.h/2});
-    if(f.mode==="inside"){
-      if(t>f.until){
-        const g=goal(f.cave);f.x=g.x;f.y=g.y;f.vx=(Math.random()<.5?-1:1)*Math.max(.4,Math.abs(f.vx));
-        f.mode="free";f.nextCave=t+(15000+Math.random()*25000)*(isShy(f)?.4:1);
-        f.el.style.pointerEvents="";f.el.style.opacity=1;f.el.style.filter="";
-      }
-      return;
+    if(f.mode!=="free"&&(!f.cave?.el.isConnected||t>f.until)){
+      f.mode="free";f.nextCave=t+90000+Math.random()*90000;
+      f.swimRoute=null;
+      f.el.style.pointerEvents="";f.el.style.opacity=1;f.el.style.filter="";
     }
+    if(f.mode==="inside")return;
     if(f.mode==="toCave"){
-      const g=goal(f.cave),dx=g.x-f.x;
-      if(Math.abs(dx)<6){
-        f.mode="inside";f.until=t+(3000+Math.random()*6000)*(isShy(f)?2:1);
+      const g=goal(f.cave),dx=g.x-f.x,dy=g.y-f.y;
+      if(Math.hypot(dx,dy)<9){
+        f.mode="inside";f.until=t+2500+Math.random()*3000;
         f.el.style.pointerEvents="none";f.el.style.filter="brightness(.35)";f.el.style.opacity=0;
         return;
       }
-      f.vx=Math.sign(dx)*Math.max(.35,Math.abs(f.vx));
-      f.x+=Math.sign(dx)*Math.min(Math.abs(dx),(walk?1:2)*(1+f.boost)*step);f.boost*=Math.pow(.94,dt);
-      f.y+=(g.y-f.y)*.04;
+      f.vx=Math.sign(dx||1)*Math.max(.35,Math.abs(f.vx));
+      f.x+=clamp(dx,-2.8*step,2.8*step);
+      f.y+=clamp(dy,-2.8*step,2.8*step);
     }else if(walk){
       if(f.pause>0){f.pause-=dt}
       else{f.x+=f.vx*(1+f.boost)*spd(f)*step;if(Math.random()<.004)f.pause=60+Math.random()*120}
@@ -422,13 +448,17 @@ function loop(t){
     }else{
       f.x+=f.vx*(1+f.boost)*spd(f)*step;f.boost*=Math.pow(.94,dt);
       f.y+=f.vy*step;
-      if(Math.random()<.01)f.vy=(Math.random()-.5)*.5;
       if(f.x<0){f.x=0;f.vx=Math.abs(f.vx)}
       if(f.x>W-f.w){f.x=W-f.w;f.vx=-Math.abs(f.vx)}
       if(f.y<yTop){f.y=yTop;f.vy=Math.abs(f.vy)}
-      if(f.y>floor-f.h){f.y=floor-f.h;f.vy=-Math.abs(f.vy)}
+      if(f.y>Math.max(yTop,floor-f.h)){f.y=Math.max(yTop,floor-f.h);f.vy=-Math.abs(f.vy)}
     }
-    if(!f.d.stats?.courtship&&f.mode==="free"&&t>f.nextCave&&cs.length&&Math.random()<(isShy(f)?.012:.004)){f.mode="toCave";f.cave=f.d.behavior?cs.reduce((a,b)=>Math.abs(a.x-f.d.behavior.homeX*W)<Math.abs(b.x-f.d.behavior.homeX*W)?a:b):cs[(Math.random()*cs.length)|0]}
+    if(!caveBusy&&!f.d.stats?.courtship&&!flockOn&&!fingerMode&&f.mode==="free"&&t>f.nextCave&&cs.length&&Math.random()<(isShy(f)?.012:.004)){
+      const g=goal(cs[0]);
+      if(Math.hypot(g.x-f.x,g.y-f.y)<Math.max(W*.30,180)){
+        caveBusy=true;f.mode="toCave";f.cave=cs[0];f.until=t+12000;
+      }
+    }
     const dir=(f.vx>0?1:-1)*(f.d.flip?-1:1);
     if(walk){
       const mv=(f.mode==="toCave"||f.pause<=0)?1:0;
@@ -1884,11 +1914,17 @@ function drawSnapshot(f,label){const im=f.el.querySelector('img');if(!im?.comple
 const v3Add=addFish;addFish=function(id,d){v3Add(id,d);const f=fishes.get(id);if(f)prepareAnimal(f)};
 const v3Behavior=behaviorSteer;
 function nearestPlant(f){const list=ENV.vegetation;return list.length?list.reduce((a,b)=>Math.abs(a.x/100*innerWidth-f.x)<Math.abs(b.x/100*innerWidth-f.x)?a:b):null}
-behaviorSteer=function(f,t,walk){const st=f.d.stats,b=f.d.behavior;if(!st||!b||f.egg)return;
+behaviorSteer=function(f,t,walk,swimming,width,top,bottom){const st=f.d.stats,b=f.d.behavior;if(!st||!b||f.egg)return;
  if(f.d.taxon!=='fish'){f.activity=f.d.taxon==='snail'?'Raspa algues':'Busca restes';if(!night){const target=foods.find(q=>q.world==='aquari'&&q.landed&&!q.done);if(target&&st.energy<88)f.vx=Math.sign(target.x-f.x)*.32;else f.vx=clamp(f.vx,-.4,.4)}return}
  const hasFood=foods.some(q=>q.world==='aquari'&&!q.done&&!q.landed&&q.y<innerHeight*.66);
  if(st.courtship){steerCourtship12(f);return}
  if(ENV.oxygen<40&&!walk){f.vy=-.45;f.vx=clamp(f.vx,-.45,.45);return}
+ if(!walk){
+  if(hasFood&&st.energy<88&&!night)return;
+  swimRoute11(f,t,swimming,width,top,bottom);
+  if(!night&&(flockOn||(fingerMode&&ptr.on&&t-ptr.t<800)))v3Behavior(f,t,walk);
+  return;
+ }
  if(night){const tx=b.homeX*innerWidth,ty=innerHeight*.60;f.vx=clamp((tx-f.x)*.004,-.2,.2);f.vy=clamp((ty-f.y)*.004,-.15,.15);f.activity='Descansa al refugi';return}
  if(lifeStage(f)===0&&!hasFood){const p=nearestPlant(f);if(p){f.vx=clamp((p.x/100*innerWidth-f.x)*.008,-.6,.6);f.vy=clamp((innerHeight*.59-f.y)*.008,-.4,.4);f.activity='Entre les plantes';return}}
  if(!hasFood&&!fingerMode&&!flockOn){const near=swimmers(t).filter(q=>q!==f&&Math.hypot(q.x-f.x,q.y-f.y)<220);
